@@ -4917,8 +4917,11 @@ header {
 .footer-top > div:first-child{
   margin-left: -83px;
 }
+.footer-top > div:nth-child(2){
+  margin-left: 80px;
+}
 .footer-top > div:last-child{
-  margin-right: -76px;
+  margin-right: -155px;
 }
 .sign-up-from > input:last-child{
   position: relative;
