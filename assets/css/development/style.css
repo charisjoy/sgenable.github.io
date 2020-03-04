@@ -1854,10 +1854,10 @@ p, .tab-sub-text, .text-box-onscroll, li {
   background-color:#009999 ;
   color: #ffff !important;
   margin-top: 0.625rem;
-  border-bottom: 1px solid #994789;
   cursor: pointer;
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-size: 17px!important;
+  font-family: "Avenir", sans-serif;
+  width: 50%;
 }
 .button-privacy-policy {
   color: #fff;
@@ -4846,7 +4846,7 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 10px;
-  margin: 7px 7rem 0 2rem;
+ /* margin: 7px 7rem 0 2rem;*/
   border-radius: 18px;
 }
 
