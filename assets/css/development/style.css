@@ -2505,6 +2505,28 @@ header.her2-header .title-box h1 {
 .image-box article {
   margin-bottom: 0.5rem;
 }
+.about-img{
+ /* width: 100%;
+  height: 100%;*/            
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+}
+.about-shadow{
+  width: 130%;
+  height: 125%;            
+  position: absolute;
+  top: 0;
+  left: 0; 
+  background-color: #ebf5da;
+  margin: 40px;
+  border-radius: 20px
+
+}
+
+
 @media (max-width: 56.25em) {
   .image-box article {
     margin-top: 1.75rem !important;
@@ -3129,6 +3151,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   font-family: 'Avenir';
+  color: #666666;
 }
 
 .lead {
