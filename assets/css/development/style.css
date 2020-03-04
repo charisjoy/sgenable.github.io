@@ -4885,9 +4885,13 @@ header {
   box-sizing: border-box;
   padding: 12px;
 }
+.sign-up-from > input:nth-child(3){
+  margin-top: 9px;
+}
 .sign-up-from > input:last-child{
   padding:0px !important;
 }
+
 /* or selector a .fa */
 .social-icon a {  
     font-size: 2em;
@@ -4918,7 +4922,6 @@ header {
 }
 .sign-up-from > input:last-child{
   position: relative;
-  top: 7px;
 }
 .footer-roche-copyright{
   margin-top:34px !important;
