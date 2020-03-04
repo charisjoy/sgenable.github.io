@@ -17,7 +17,7 @@ for (let i = 0; i < buttons.length; ++i) {
     }
   );
 }
-
+/*
 window.onscroll = function () {
   // sticky top navigation
   function stick() {
@@ -33,3 +33,4 @@ window.onscroll = function () {
 
   stick();
 };
+*/
