@@ -4890,3 +4890,36 @@ header {
   top: 10px;
   width: 100%;
 }
+
+/* Footer */
+.footer-roche-disclaimer img{
+  width: 68% !important;
+  margin-left: 54px  !important;
+}
+.sign-up-from{
+  width: 109%;
+}
+.sign-up-from input{
+  color:#464646;
+  box-sizing: border-box;
+}
+.social-icon .fa-linkedin{
+  font-size: 41px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 20px;
+}
+.social-icon .fa-facebook{
+  font-size: 41px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 21px;
+}
+.footer-links a{
+  margin-right:15px;
+}
+.footer-links > a:last-child{
+  margin-right: 0px;
+}
