@@ -4894,11 +4894,11 @@ header {
 
 /* or selector a .fa */
 .social-icon a {  
-    font-size: 2em;
+    font-size: 1.2em;
     border-radius: 50%;
     border: solid white;
     color: white;
-    line-height: 2em;
+    /*line-height: 2em;*/
     width: 2em;
     height: 2em;
     text-align: center;
