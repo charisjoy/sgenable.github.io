@@ -1804,7 +1804,7 @@ h2 {
 }
 
 p, .tab-sub-text, .text-box-onscroll, li {
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 .column-center {
@@ -4726,25 +4726,6 @@ mark,
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #85cdc7}
 
-/* Show the dropdown menu on hover */
-/*.dropdown:hover .dropdown-content {
-  display: block;
-}
-*/
-i{
-    margin: 0 0 4px 109px;
-    border: solid #994789;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-@media (max-width: 37.5em){
-  i{
-    margin: 1px 0 0 13px;
-  }
-}
-
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -4838,7 +4819,7 @@ header {
 .button {
   position: relative;
   top: 7px;
-  /*background-color: #0056b8;*/
+  background-color: #0056b8;
   border: none;
   color: white;
   padding: 9px 30px;
@@ -4893,7 +4874,7 @@ header {
 
 /* Footer */
 .footer-roche-disclaimer img{
-  width: 68% !important;
+  width: 64% !important;
   margin-left: 54px  !important;
 }
 .sign-up-from{
@@ -4902,24 +4883,40 @@ header {
 .sign-up-from input{
   color:#464646;
   box-sizing: border-box;
+  padding: 12px;
 }
-.social-icon .fa-linkedin{
-  font-size: 41px;
-  background-color: white;
-  border-radius: 50%;
-  border: 1x solid grey;
-  padding: 20px;
-}
-.social-icon .fa-facebook{
-  font-size: 41px;
-  background-color: white;
-  border-radius: 50%;
-  border: 1x solid grey;
-  padding: 21px;
+/* or selector a .fa */
+.social-icon a {  
+    font-size: 2em;
+    border-radius: 50%;
+    border: solid white;
+    color: white;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
 }
 .footer-links a{
   margin-right:15px;
 }
 .footer-links > a:last-child{
   margin-right: 0px;
+}
+.footer-top{
+  display:flex !important;
+}
+.footer-top > div:first-child{
+  margin-left: -83px;
+}
+.footer-top > div:last-child{
+  margin-right: -76px;
+}
+.sign-up-from > input:last-child{
+  position: relative;
+  top: 7px;
+}
+.footer-roche-copyright{
+  margin-top:34px !important;
 }
