@@ -32,20 +32,19 @@
 
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
-<body>
-
+<body id="body-content">
   <!-- Main Header --> 
-    <div class="topnav simple-sticky sticky">
+    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
       <a class="active" href="./">
         <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
       </a>
-      <div class="topnav-right">
+      <div id="topnav-link" class="topnav-right">
         <a href="#search">ABOUT US</a>
         <a href="#about">HOW TO APPLY</a>
         <a href="#about">HONOUR ROLL</a>
         <a href="#about">FAQs</a>
         <a href="#about">TAKE SURVEY</a>
-        <button class="button">LOGIN</button>
+        <button id="btn-login" class="button button-login">LOGIN</button>
       </div>
     </div>
 
@@ -55,7 +54,7 @@
           <div class="row">
             <div class="img-overlay-wrap">
               <img class="item-img" src="assets/media/image/slider-1-desktop-image.png" alt="...">
-              <img class="item-svg" src="assets/media/image/slider-1-desktop-mask.svg" alt="...">
+              <img id="item-svg-slide-1" class="item-svg" src="assets/media/image/slider-1-desktop-mask.svg" alt="...">
             </div>
             <div class="carousel_item_control">
               <div>
@@ -63,11 +62,10 @@
                 <h2 class="h2-enable-mark">
                   The Enabling Mark. Find out where your organization stand.
                 </h2>
-                <button class="btn-slide">TAKE THE SURVEY</button>
+                <button id="btn-survey-slide1" class="btn-slide">TAKE THE SURVEY</button>
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions12" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions12" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions12" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="1"></li>                  
                 </ol>
               </div>
             </div>
@@ -102,24 +100,22 @@
               </svg>
 
             </div>
-            <div class="carousel_item_control-slide-2">
+            <div id="item_control-slide-2" class="carousel_item_control-slide-2">
               <div>
                 <h1 class="h1-inclusive">LOREM IPSUM<br>DOLOR AMAN</h3>
                 <h2 class="h2-enable-mark">
                   Nominations are now open. Lorem<br>ipsum dolor.
                 </h2>
-                <button class="btn-slide">TAKE THE SURVEY</button>
+                <button id="btn-survey-slide2" class="btn-slide">TAKE THE SURVEY</button>
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions12" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions12" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions12" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="0"></li>
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="1" class="active"></li>              
                 </ol>
               </div>
             </div>
           </div>
         </div>      
   
-      </div>
       <a class="carousel-control-prev slides-switcher" href="#carouselExampleCaptions12" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -128,36 +124,21 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <div class="green-circle-menu">
+      <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
         <div class="green-circle-menu-control">
-          <p class="gcm-control"><i class="arrow right"></i></p>
+          <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
         </div>
           <div class="green-circle-menu-content">
-          <p><i class="fa fa-eye" aria-hidden="true"></i><p>
-          <p>CONTRAST<p>
-          <p>A-<p>
-          <p>A<p>
-          <p>A+<p>
-          <p>TEXT SIZE<p>
-          <p>ACCESSIBILITY<p>
+            <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
+            <div><a class="label">CONTRAST<a></a></div>
+            <div><a class="accessibility-small">A-<a></a></div>
+            <div><a class="accessibility-normal">A<a></a></div>
+            <div><a class="accessibility-large">A+<a></a></div>
+            <div><a class="label">TEXT SIZE<p></p></div>
+            <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
           </div>    
       </div>
     </div>   
-
-  <!-- Reaveling Sticky Navigation -->
-  <div class="topnav simple-sticky">
-    <a class="active" href="./">
-      <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
-    </a>
-    <div class="topnav-right">
-      <a href="#search">ABOUT US</a>
-      <a href="#about">HOW TO APPLY</a>
-      <a href="#about">HONOUR ROLL</a>
-      <a href="#about">FAQs</a>
-      <a href="#about">TAKE SURVEY</a>
-      <button class="button">LOGIN</button>
-    </div>
-  </div>
 
   <!-- Main Content -->
   <main id="bc">
@@ -168,7 +149,7 @@
           <h6>ABOUT US</h6>
           <h2>Lorem ipsum dolor aman insep dolor</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
-          <a class="button button-learn-more">LEARN MORE</a>
+          <a id="btn-learnmore1" class="button button-learn-more">LEARN MORE</a>
         </div>
         <div class="col-md-6">
           <img src="assets/media/image/image-1.png" alt="About Us Photo">
@@ -184,7 +165,7 @@
           <h6>HONOUR ROLL</h6>
           <h2>Lorem ipsum dolor aman insep dolor</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
-          <a class="button button-learn-more">LEARN MORE</a>
+          <a id="btn-learnmore2" class="button button-learn-more">LEARN MORE</a>
         
         </div>
       </article>
@@ -195,7 +176,7 @@
           <h6>OUR PROCESS</h6>
           <h2>Lorem ipsum dolor aman insep dolor</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
-          <a class="button button-learn-more">LEARN MORE</a>
+          <a id="btn-learnmore3" class="button button-learn-more">LEARN MORE</a>
         </div>
         <div class="col-md-6">
           <img src="assets/media/image/image-3.png" alt="Our Process">
@@ -281,7 +262,7 @@
   </main>
 
   <!-- Footer & Disclaimer -->
-  <footer class="main-footer footer-roche-disclaimer">
+  <footer id="footer" class="main-footer footer-roche-disclaimer">
     <div class="container footer-top">
       <div class="col-md-6 col-lg-4">
         <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
@@ -293,7 +274,7 @@
             <input type="text" value="First Name">
             <input type="text" value="Last Name">
             <input type="email" value="eMail address">
-            <input id="submit" type="submit" value="SUBMIT">
+            <input id="btn-submit" id="submit" class="button" type="submit" value="SUBMIT">
           </div>
           
         </div>
@@ -306,7 +287,7 @@
         </div>
       </div>
   </div>
-    <div class="copyright footer-roche-copyright">
+    <div id="footer-copyright" class="copyright footer-roche-copyright">
       <div class="footer-content container">
         <div>&copy; 2020 SG Enable. All rights reserved.</div>
         <div class="footer-links">
@@ -318,7 +299,7 @@
     </div>
   </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="assets/js/sge-script.js"></script>
