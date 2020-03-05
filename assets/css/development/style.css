@@ -4561,10 +4561,10 @@ mark,
 
 .carousel-indicators {
   position: relative;
-  top:12px;
-  right: 0;
+  top: 22px;
+  right: 0px;
   bottom: 0;
-  left: 0;
+  left: -10px;
   z-index: 15;
   display: flex;
   justify-content: center;
@@ -4931,19 +4931,28 @@ header {
   top: 0;
   left: 0;
 }
-
 .carousel_item_control{
   position: relative;
   top: -9rem;
   left: 61rem;
   margin-bottom: 9rem;
 }
+.carousel_item_control-slide-2{
+  position: absolute;
+  top: 52rem;
+  right: 0rem;
+  margin-bottom: 9rem;
+  background-color: #0056b8;
+  border-radius: 10px;
+  padding: 19px 187px 48px 40px;
+}
+
 .h1-inclusive{
   font-family: "Oduda";
   font-size: 72px;
   color: #95c83d;
 }
-.btn-slide-1{
+.btn-slide{
   position: relative;
   top: 7px;
   background-color: #00a79d;
@@ -4962,4 +4971,38 @@ header {
   font-family: "Avenir Heavy";
   font-size:28px;
   color: #ffffff;
+}
+.green-circle-menu{
+  position: absolute;
+  right: -10rem;
+  top: 54rem;
+  background-color: #95c83d;
+  border-radius: 50%;
+  width: 20rem;
+  padding: 13px 0 15px 94px;
+  display: flex;
+  align-items: center;
+}
+.gcm-control i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.gcm-control{
+  position: relative;
+  top: 1rem;
+  right: 4rem;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.green-circle-menu-content p{
+  font-size: 12px !important;
+  font-weight: bold;
+}
+.green-circle-menu-content{
+  position: relative;
+  left: -1rem;
 }
