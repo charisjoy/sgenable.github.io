@@ -2606,12 +2606,10 @@ header.her2-header .title-box h1 {
 
 .image-box h2 {
   font-size: 2.18rem;
-  font-family: 'Oduda';
 }
 
 .image-box p {
   padding-top: 1rem;
-  font-family: 'Avenir';
 }
 
 .card-box p {
@@ -4852,7 +4850,6 @@ header {
   position: relative;
   top: 10px;
   color: #0056b8;
-  font-family: avenir;
   font-size: medium;
   text-align: center;
   padding: 14px 16px;
@@ -4881,7 +4878,9 @@ header {
  /* margin: 7px 7rem 0 2rem;*/
   border-radius: 18px;
 }
-
+.button-login{
+  background-color: #033d80;
+}
 /*
 ** SGE STICKY NAV
 */
@@ -4911,7 +4910,6 @@ header {
   padding-bottom: 0.3125rem;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Avenir Medium";
   font-size: 16px;
 }
 .simple-sticky.sticky {
@@ -4975,6 +4973,7 @@ header {
 }
 .sign-up-from > input:last-child{
   position: relative;
+  top: 0px;
 }
 .footer-roche-copyright{
   margin-top:34px !important;
@@ -4989,8 +4988,9 @@ header {
 
 .img-overlay-wrap .item-svg {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
+  height: 1650px;
 }
 .carousel_item_control{
   position: relative;
@@ -5009,7 +5009,6 @@ header {
 }
 
 .h1-inclusive{
-  font-family: "Oduda";
   font-size: 72px;
   color: #95c83d;
 }
@@ -5023,13 +5022,11 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Oduda Semibold";
   font-size: 17px;
   /* margin: 7px 7rem 0 2rem; */
   border-radius: 18px;
 }
 .h2-enable-mark{
-  font-family: "Avenir Heavy";
   font-size:28px;
   color: #ffffff;
 }
@@ -5040,15 +5037,16 @@ header {
   background-color: #95c83d;
   border-radius: 50%;
   width: 20rem;
-  padding: 13px 0 15px 94px;
+  padding: 40px 0 40px 80px;
   display: flex;
   align-items: center;
 }
 .gcm-control i {
-  border: solid black;
+  border: solid #0056b8;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  cursor: pointer;
 }
 .gcm-control{
   position: relative;
@@ -5059,11 +5057,69 @@ header {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.green-circle-menu-content p{
-  font-size: 12px !important;
+.green-circle-menu-content .label{
+  font-size: 13px !important;
   font-weight: bold;
 }
 .green-circle-menu-content{
   position: relative;
   left: -1rem;
+}
+.accessibility-sticky{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 477px;
+  right: -9rem;
+  color: #0056b8;
+}
+.accessibility-contrast, .accessibility-small,
+.accessibility-normal, .accessibility-large{
+  cursor: pointer;
+}
+.accessibility-small{
+  font-size: 13px !important;
+  font-weight: bold;
+}
+.accessibility-normal{
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.accessibility-large{
+  font-size: 22px !important;
+  font-weight: bold;
+}
+.green-circle-menu-content p{
+  margin-bottom: 8px !important;
+}
+.btn-contrast-on{
+  background-color: white !important;
+  color:black !important;
+}
+.btn-contrast-off{
+  background-color: #00a79d !important;
+  color:white !important;
+}
+.topnav-contrast a{
+  color: white !important;
+}
+.green-circle-menu-contrast{
+  background-color: white !important;
+  color:black !important;
+}
+.green-circle-menu-contrast i,.green-circle-menu-contrast a{
+  color:black !important;
+}
+.filter-black{
+  filter: brightness(7%);
+}
+.topnav-link-contrast a:hover{
+  border-top: 18px solid #95c83d !important;
+}
+.tabcontent{
+  display: none;
+}
+.active{
+  display: block;
 }
