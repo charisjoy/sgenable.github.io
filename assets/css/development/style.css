@@ -2519,7 +2519,7 @@ header.her2-header .title-box h1 {
 }
 .about-shadow{
   width: 130%;
-  height: 125%;            
+  height: 145%;            
   position: absolute;
   top: 0;
   left: 0; 
@@ -2536,7 +2536,7 @@ header.her2-header .title-box h1 {
  }
 .hroll-shadow{          
   width: 125%;
-  height: 152%;            
+  height: 177%;            
   position: absolute;
   /*top: 71px;*/
   left: -259px; 
@@ -4880,7 +4880,7 @@ header {
 .button {
   position: relative;
   top: 7px;
-  background-color: #0056b8;
+  background-color: #00a79d;
   border: none;
   color: white;
   padding: 9px 30px;
