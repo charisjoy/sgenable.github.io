@@ -2546,12 +2546,10 @@ header.her2-header .title-box h1 {
 
 .image-box h2 {
   font-size: 2.18rem;
-  font-family: 'Oduda';
 }
 
 .image-box p {
   padding-top: 1rem;
-  font-family: 'Avenir';
 }
 
 .card-box p {
@@ -3125,7 +3123,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
-  font-family: 'Avenir';
 }
 
 .lead {
@@ -4791,7 +4788,6 @@ header {
   position: relative;
   top: 10px;
   color: #0056b8;
-  font-family: avenir;
   font-size: medium;
   text-align: center;
   padding: 14px 16px;
@@ -4852,7 +4848,6 @@ header {
   padding-bottom: 0.3125rem;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Avenir Medium";
   font-size: 16px;
 }
 .simple-sticky.sticky {
@@ -4952,7 +4947,6 @@ header {
 }
 
 .h1-inclusive{
-  font-family: "Oduda";
   font-size: 72px;
   color: #95c83d;
 }
@@ -4966,13 +4960,11 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Oduda Semibold";
   font-size: 17px;
   /* margin: 7px 7rem 0 2rem; */
   border-radius: 18px;
 }
 .h2-enable-mark{
-  font-family: "Avenir Heavy";
   font-size:28px;
   color: #ffffff;
 }
@@ -5062,4 +5054,10 @@ header {
 }
 .topnav-link-contrast a:hover{
   border-top: 18px solid #95c83d !important;
+}
+.tabcontent{
+  display: none;
+}
+.active{
+  display: block;
 }
