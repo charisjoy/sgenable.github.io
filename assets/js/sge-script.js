@@ -88,8 +88,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // addEventListener(event, function, useCapture)
       function toogleContrast(){
         if(!contrast){
+
             document.getElementById("body-content").style.backgroundColor = "rgb(10,10,10,1)";   
             document.getElementById("body-content").style.color = "#ffffff";
+
             var h2 = document.getElementById("body-content").querySelectorAll("h2");  
             for (i = 0; i < h2.length; i++) {        
               h2[i].setAttribute( 'style', 'color : #95c83d' );
@@ -116,15 +118,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("green-circle-menu").className  = 'green-circle-menu-contrast green-circle-menu accessibility-sticky sticky';
             document.getElementById("item-svg-slide-1").className  = 'filter-black item-svg';
             document.getElementById("topnav-link").className  = 'topnav-link-contrast topnav-right';
+            var y = document.getElementById("Information").className;
+            document.getElementById("Information").className  = 'contrast '+y;
+            var q = document.getElementById("Aboutus").className;
+            document.getElementById("Aboutus").className  = 'aboutus-contrast '+q;
+            
                        
             contrast = true;
         }else{
             document.getElementById("body-content").style.backgroundColor = "#ffffff";   
             document.getElementById("body-content").style.color = "rgb(10,10,10,1)";
+
             var h2 = document.getElementById("body-content").querySelectorAll("h2");  
             for (i = 0; i < h2.length; i++) {        
               h2[i].setAttribute( 'style', 'color : rgb(10,10,10,1)' );
             }
+
             //Button Contrast//
             document.getElementById("btn-login").style.backgroundColor = '#033d80';
             document.getElementById("btn-login").style.color = '#ffffff';
@@ -145,6 +154,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("green-circle-menu").className  = 'green-circle-menu accessibility-sticky sticky';
             document.getElementById("item-svg-slide-1").className  = 'item-svg';
             document.getElementById("topnav-link").className  = 'topnav-right';
+            var y = document.getElementById("Information").className;
+            document.getElementById("Information").className  = y.replace('contrast','');
+            var q = document.getElementById("Aboutus").className;
+            document.getElementById("Aboutus").className  = q.replace('aboutus-contrast','');
 
             contrast = false;
         }      
