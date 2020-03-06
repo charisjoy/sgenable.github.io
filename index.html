@@ -33,11 +33,12 @@
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
 <body id="body-content">
-  <!-- Main Header --> 
+    <!-- Main Header --> 
     <div id="global-sticky-menu" class="topnav simple-sticky sticky">
       <a class="active" href="./">
         <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
       </a>
+      <div class="link-background"></div>
       <div id="topnav-link" class="topnav-right">
         <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
         <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
@@ -153,6 +154,7 @@
         </div>
         <div class="col-md-6">          
           <img src="assets/media/image/image-1.png" alt="About Us Photo">
+          <div class="information-shadow shadow"></div> 
         </div>
       </article>
 
@@ -160,6 +162,7 @@
       <article class="left-image row space-top">
         <div class="col-md-6">
           <img src="assets/media/image/image-2.png" alt="Honour Roll">
+          <div class="information-shadow-left shadow"></div> 
         </div>
         <div class="col-md-6 column-center">
           <h6>HONOUR ROLL</h6>
@@ -179,6 +182,7 @@
         </div>
         <div class="col-md-6">
           <img src="assets/media/image/image-3.png" alt="Our Process">
+          <div class="information-shadow-process shadow"></div> 
         </div>
       </article>
 
@@ -186,51 +190,47 @@
 
     <section id="Information" class="information container tabcontent">
       <!-- Right Image -->
-      <article class="right-image row space-top">
+      <article id="information-content" class="right-image row space-top">
         <div class="col-md-6 column-center">
           <h1>ABOUT</h1>
           <h2>Lorem ipsum dolor aman insep dolor</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>       
         </div>
         <div class="col-md-6">
-          <div class="about-img">
-          <img src="assets/media/image/image-1.png" alt="About Us Photo">
-          </div>
-          <div class="about-shadow"></div>
-        </div>  
-        
+          <img src="assets/media/image/image-1.png" alt="Information Photo">    
+          <div class="information-shadow"></div>   
+        </div>    
       </article>
 
-      <!-- Left Iamge -->
-      <article class="left-image row space-top">
-        <div class="col-md-6">
-          <div class="hroll-img">
-          <img src="assets/media/image/image-2.png" alt="Honour Roll">          
-        </div>
-        <div class="hroll-shadow"></div>
-        </div>
-        <div class="col-md-6 column-center">
-          <h6>HONOUR ROLL</h6>
-          <h2>Lorem ipsum dolor aman insep dolor</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
-          <a id="btn-learnmore2" class="button button-learn-more">LEARN MORE</a>
-        
-        </div>
-      </article>
-
-       <!-- Right Image -->
-       <article class="right-image row space-top">
-        <div class="col-md-6 column-center our-process">
-          <h6>OUR PROCESS</h6>
-          <h2>Lorem ipsum dolor aman insep dolor</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
-          <a id="btn-learnmore3" class="button button-learn-more">LEARN MORE</a>
-        </div>
-        <div class="col-md-6">
-          <div class="process-img">
-          <img src="assets/media/image/image-3.png" alt="Our Process">
+      <article id="information-content-2" class="row space-top-6">        
+          <div class="flex-container">
+            <div class="information-border-left-green"></div>
+            <div class="information-content-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lorem, venenatis vel molestie vel, rutrum bibendum enim. Curabitur laoreet urna vel quam fringilla cursus. Cras elit justo, viverra a felis vel, ullamcorper tempor magna. Nunc consequat, libero a aliquet condimentum, est turpis vulputate lectus, sit amet laoreet nisl elit in enim. Integer consectetur aliquam erat nec laoreet. Vestibulum bibendum dignissim placerat. Suspendisse id commodo felis. Sed nec finibus libero, ut sodales leo. Donec vel placerat massa, sed fermentum tellus. Nullam id ligula vitae ipsum dictum accumsan. Curabitur dapibus arcu eu rutrum rhoncus. In semper tortor est, eu consequat velit semper vel.</p>  
+              <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>Quisque suscipit mollis varius. Sed nec lacus id lorem ultrices sagittis eu in augue. Proin ut nisl ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ornare leo ac eros accumsan vulputate. Morbi nisl nibh, laoreet egestas pellentesque sed, eleifend vel libero. Sed ac velit finibus mauris congue sagittis. Pellentesque sodales, lectus eget efficitur bibendum, est diam egestas odio, sit amet volutpat ligula mi vel massa. Morbi in consectetur elit. In et malesuada massa. Pellentesque id sapien libero. Proin eget elementum nisi. Aliquam ullamcorper metus sit amet neque malesuada, ac dapibus odio auctor.</p>
+              <img src="assets/media/image/image-4.png" alt="Information Photo"> 
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h5>
+              <h6>Sed augue lorem, venenatis vel molestie vel, rutrum bibendum enim. Curabitur laoreet urna vel quam fringilla cursus. Cras elit justo, viverra a felis vel, ullamcorper tempor magna. Nunc consequat</h6>
+            </div>
           </div>
-          <div class="process-shadow"></div>
+          <div class="flex-container">
+            <div class="information-border-left-blue"></div>
+            <div class="information-content-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lorem, venenatis vel molestie vel, rutrum bibendum enim. Curabitur laoreet urna vel quam fringilla cursus. Cras elit justo, viverra a felis vel, ullamcorper tempor magna. Nunc consequat, libero a aliquet condimentum, est turpis vulputate lectus, sit amet laoreet nisl elit in enim. Integer consectetur aliquam erat nec laoreet. Vestibulum bibendum dignissim placerat. Suspendisse id commodo felis. Sed nec finibus libero, ut sodales leo. Donec vel placerat massa, sed fermentum tellus. Nullam id ligula vitae ipsum dictum accumsan. Curabitur dapibus arcu eu rutrum rhoncus. In semper tortor est, eu consequat velit semper vel.</p>  
+            </div>
+          </div>                    
+      </article>
+      <article id="information-content-3" class="space-top">
+        <div class="flex-container">
+          <div class="information-content-3-img">
+            <img src="assets/media/image/image-2.png" alt="Information Photo">
+            <div class="information-shadow-cont-3"></div>
+          </div>
+          <div class="information-content-3-right">
+            <h5 class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h5>
+            <h6>Sed augue lorem, venenatis vel molestie vel, rutrum bibendum enim. Curabitur laoreet urna vel quam fringilla cursus. Cras elit justo, viverra a felis vel, ullamcorper tempor magna. Nunc consequat</h6>     
+          </div>
         </div>
       </article>
 

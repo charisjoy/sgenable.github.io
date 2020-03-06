@@ -4858,12 +4858,21 @@ header {
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
-
 .topnav-right {
   position: absolute;
-  right: 0rem;
+  right: 4rem;
+  top: 1rem;
 }
-
+.link-background{
+  position: absolute;
+  right: 164px;
+  height: 138px;
+  width: 128px;
+  background-color: #95c83d;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  z-index: -1;
+}
 .button {
   position: relative;
   top: 7px;
@@ -4880,6 +4889,9 @@ header {
 }
 .button-login{
   background-color: #033d80;
+}
+.button-login:hover{
+  background-color: #95c83d;
 }
 /*
 ** SGE STICKY NAV
@@ -4919,6 +4931,7 @@ header {
   z-index: 999;
   top: 10px;
   width: 100%;
+  overflow: visible;
 }
 
 /* Footer */
@@ -4933,6 +4946,7 @@ header {
   color:#464646;
   box-sizing: border-box;
   padding: 12px;
+  border: none;
 }
 .sign-up-from > input:nth-child(3){
   margin-top: 9px;
@@ -4985,12 +4999,14 @@ header {
   transition: transform 150ms ease-in-out;
   width: 100%;
 }
-
 .img-overlay-wrap .item-svg {
   position: absolute;
   top: 0px;
   left: 0;
-  height: 1650px;
+}
+.item-img{
+  position: relative;
+  top: -16px;
 }
 .carousel_item_control{
   position: relative;
@@ -5120,6 +5136,118 @@ header {
 .tabcontent{
   display: none;
 }
-.active{
+#bc .active{
   display: block;
+}
+#topnav-link .active{
+  border-top: 18px solid #033d80;
+}
+.topnav-link-contrast .active{
+  border-top: 18px solid #95c83d !important;
+}
+#topnav-link-contrast .active{
+  border-top: 18px solid #95c83d !important;
+}
+#information-content h1,#information-content h2{
+ color: #0056b8;
+}
+
+.information-shadow{
+  width: 162%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 87px;
+  background-color: #ebf5da;
+  margin: 38px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.information-shadow-left{
+    position: absolute;
+    top: -68px;
+    right: 29px;
+    width: 207%;
+    height: 115%;
+    background-color: #e5eef5;
+    margin: 38px;
+    border-radius: 20px;
+    z-index: -1;
+}
+.information-shadow-process{
+    position: absolute;
+    top: -65px;
+    left: 87px;
+    width: 162%;
+    height: 114%;
+    background-color: #ebf5da;
+    margin: 38px;
+    border-radius: 20px;
+    z-index: -1;
+}
+}
+.information-shadow-cont-3{
+  width: 515%;
+  height: 108%;
+  position: relative;
+  top: -258px;
+  background-color: #e5eef5;
+  margin: 38px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.space-top-6{
+  margin-top:6rem;
+}
+
+.flex-container{
+  display: flex;
+}
+.information-content-right{
+  margin-left: 5rem;
+}
+#information-content-2 .flex-container{
+  margin-left:5rem;
+}
+
+.information-border-left-green{
+  background: #adda60;
+  width: 3rem;
+  height: 9rem;
+  border-radius: 4px;
+}
+.information-border-left-blue{
+  background: #0056b8;
+  width: 3rem;
+  height: 9rem;
+  border-radius: 4px;
+}
+.bold{
+  font-weight: bold;
+}
+.information-content-right img{
+  margin-top: 13px;
+  margin-bottom: 21px;
+}
+#information-content-2 > div:last-child{
+  margin-top:15px;
+}
+.flex-container .information-content-3-img{
+  margin-right: 2rem;
+}
+
+#Information #information-content h1, #Information .contrast h2{
+  color: #adda60 !important;
+}
+.contrast .information-border-left-blue{
+  background: #adda60 !important;
+}
+.contrast .information-shadow-cont-3, .contrast .information-shadow,.aboutus-contrast .shadow{
+  background-color:black !important;
+}
+.topnav-contrast .link-background{
+  background-color:white !important;
+}
+.topnav-link-contrast > a:nth-child(5){
+  color:black !important;
 }
