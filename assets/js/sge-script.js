@@ -17,12 +17,16 @@ function openTabContent(evt, linkName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+
+  document.getElementById(linkName).style.display = "block";
+  
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(linkName).style.display = "block";
+
   evt.currentTarget.className += " active";
+  
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {  
