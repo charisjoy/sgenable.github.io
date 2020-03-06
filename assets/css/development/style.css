@@ -4796,10 +4796,6 @@ header {
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
-.topnav-right > a:nth-child(5):hover{
-  background-color: transparent  !important;
-}
-
 .topnav-right {
   position: absolute;
   right: 4rem;
