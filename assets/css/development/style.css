@@ -4824,13 +4824,6 @@ header {
   padding: 14px 16px;
   text-decoration: none;
 }
-.topnav-right  a:nth-child(5):hover{
-  border-top:transparent !important;
-  .link-background{
-    background-color: red  !important;
-  }
-}
-
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
@@ -5119,9 +5112,9 @@ header {
 .tabcontent{
   display: none;
 }
-#bc .active{
+/*#bc .active{
   display: block;
-}
+}*/
 #topnav-link .active{
   border-top: 18px solid #033d80;
 }
@@ -5241,7 +5234,7 @@ header {
   padding: 9px;
   justify-content: space-around;
 }
-#Survey .flex-container a{
+#Survey .navigation a{
   background-color: #0056b8;
   font-family: 'Oduda Semi Bold';
   font-size: 17px;
@@ -5250,16 +5243,15 @@ header {
   width: 216px;
   padding: 14px 13px 16px 16px;
   border-radius: 12px;
+  cursor: pointer;
 }
 .survey-steps{
   text-align:center;
   margin-top:154px;
+  margin-bottom: 25px;
 }
 .survey-steps span:nth-child(11){
   margin-left: 31px;
-}
-.survey div:nth-child(2){
-  margin-top:24px;
 }
 .step {
   height: 10px;
@@ -5270,12 +5262,6 @@ header {
   border-radius: 12%;
   display: inline-block;
   opacity: 0.5;
-}
-
-@media (min-width: 1200px){
-  .survey {
-      max-width: 1200px !important;
-  }
 }
 .tab{
   display:none;
@@ -5289,20 +5275,29 @@ header {
   padding: 25px;
   border-radius: 16px;
 }
-.q1 h4{
+.q2{
+  background-color: #ebf5da;
+  padding: 25px;
+  border-radius: 16px;
+}
+.q3{
+  background-color: #e5eef5;
+  padding: 25px;
+  border-radius: 16px;
+}
+.survey h4{
   color: #0056b8;
   margin-bottom:26px;
 }
-.q1 span{
-  display: inline;
+.survey span{
   margin-left: 23px;
 }
-.q1 img{
+.survey img{
   width: 25%;
   height: 165px;
   float: right;
 }
-.q1 .block{
+.survey .block{
   display: block;
   margin-left: 2rem;
 }
@@ -5314,7 +5309,7 @@ header {
 }
 /*Style button*/
 /* The container */
-.q1 .container {
+.survey .container {
   display: block;
   position: relative;
   padding-left: 80px;
@@ -5329,7 +5324,7 @@ header {
 }
 
 /* Hide the browser's default checkbox */
-.q1 .container input {
+.survey .container input[type=checkbox] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -5338,7 +5333,7 @@ header {
 }
 
 /* Create a custom checkbox */
-.q1  .checkmark {
+.survey  .checkmark {
   position: absolute;
   top: 2px;
   left: 10px;
@@ -5348,28 +5343,28 @@ header {
 }
 
 /* On mouse-over, add a grey background color */
-.q1  .container:hover input ~ .checkmark {
+.survey  .container:hover input[type=checkbox] ~ .checkmark {
   background-color: #ccc;
 }
 
-.q1 .checkbox:checked:before{
+.survey .checkbox:checked:before{
   background-color:green;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.q1  .checkmark:after {
+.survey  .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.q1 .container input:checked ~ .checkmark:after {
+.survey .container input[type=checkbox]:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.q1 .container .checkmark:after {
+.survey .container .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -5380,7 +5375,7 @@ header {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.q1 textarea{
+.survey textarea{
   height: 115px;
   width: 93%;
   -webkit-box-sizing: border-box;
@@ -5388,4 +5383,44 @@ header {
   box-sizing: border-box;
   border-radius: 9px;
   margin-bottom: 30px;
+}
+.survey .active{
+  background-color: #95c83d !important;
+}
+.q2 textarea{
+  width: 67% !important;
+}
+::-webkit-file-upload-button {
+    background-color: #00a79d;
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
+}
+.survey-btn{
+  padding:0 !important;
+  justify-content: flex-start !important;
+  margin-top: 60px;
+}
+.survey-btn a{
+  text-decoration: underline !important;
+}
+
+.survey-btn div:first-child{
+  margin-right: 100px;
+}
+.survey-btn div:nth-child(2){
+  margin-right: 100px;
+}
+.survey-btn div:last-child{
+  float:right;
+}
+.btn-next{
+  position: relative;
+  top: -42px;
+  float: right;
 }
