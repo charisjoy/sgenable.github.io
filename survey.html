@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>SGE</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fab icon-->
+  <!--
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/icon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/media/icon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/media/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/media/icon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./assets/media/icon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  -->
+  
+  <!-- Development -->
+  <link rel="stylesheet" href="assets/css/development/style.css">
+
+  <!-- Production -->
+  <!-- <link rel="stylesheet" href="assets/css/production/style.min.css"> -->
+
+  <link rel="stylesheet" href="assets/css/production/global.css">
+</head>
+<body id="body-content">
+    <!-- Main Header --> 
+    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
+      <a class="active" href="./">
+        <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
+      </a>
+      <div class="link-background"></div>
+      <div id="topnav-link" class="topnav-right">
+        <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
+        <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
+        <a class="tablinks" href="#about">HONOUR ROLL</a>
+        <a class="tablinks" href="#about">FAQs</a>
+        <a class="tablinks" onclick="openTabContent(event, 'Survey')" href="#Survey">TAKE SURVEY</a>
+        <button id="btn-login" class="button button-login">LOGIN</button>
+      </div>
+    </div>
+
+    <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
+      <div class="green-circle-menu-control">
+        <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
+      </div>
+        <div class="green-circle-menu-content">
+          <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
+          <div><a class="label">CONTRAST<a></a></div>
+          <div><a class="accessibility-small">A-<a></a></div>
+          <div><a class="accessibility-normal">A<a></a></div>
+          <div><a class="accessibility-large">A+<a></a></div>
+          <div><a class="label">TEXT SIZE<p></p></div>
+          <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
+        </div>    
+    </div>
+
+  <!-- Main Content -->
+  <main id="bc">
+    
+    <section id="Survey" class="survey container">
+        <div class="survey-steps">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="current"></span>
+            <span>of</span>
+            <span class="last">10</span>
+        </div>
+        <div class="flex-container">
+          <a class="cat1 active">Leadership, Culture and Climate</a>
+          <a class="cat2">Recruitment Practices</a>
+          <a class="cat3">Workplace Accessiblity and Accomodation</a>
+          <a class="ca14">Employment Practices</a>
+          <a class="cat5">Community Engagement and Promotion</a>
+        </div>
+        <div class="flex-container">
+          <a class="cat6">Lorem Impsum Dolor Sit Amet</a>
+          <a class="cat7">Lorem Impsum Dolor Sit Amet</a>
+          <a class="cat8">Lorem Impsum Dolor Sit Amet</a>
+          <a class="cat9">Lorem Impsum Dolor Sit Amet</a>
+          <a class="cat10">Lorem Impsum Dolor Sit Amet</a>
+        </div>
+
+        <div class="tab-wrapper container">
+            
+            <div class="tab">
+              <div class="q1"> 
+                  <img src="assets/media/image/image-1.png">
+                  <h4>Leadership, culture and climate</h4>      
+                  <h6>1.<span>Inclusive hiring strategies and goals<span></h6>   
+                  <p class="indent-1">Hiring strategies and goals for the recruitment of persons with disabilities. Inclusive employer value proposition which can be included in mission and vission statements</p>   
+                  <label class="container"><p>There are no strategies and goals to hire persons with disabilities.</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>   
+                  <label class="container"><p>There are broad strategies and goals to hire persons with disabilities, while specifics may not have been worked out.</p>
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label>  
+                  <label class="container"><p>There are well-defined strategies and goals to hire persons with disabilities and to ensure that opportunities are provided for them.</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"><p>There are long-term, well-defined strategies and goals to hire persons with disabilities, which are linked to the overall Employer Value Proosition</p>
+                    <input type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label> 
+                  <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                  <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>
+                  <textarea class="block" name="other-info"></textarea>
+                  <div class="indent-1">
+                      <label for="myfile">Select a file:</label>
+                      <input type="file" id="myfile" name="myfile"><br><br>
+                  </div>
+              </div>             
+            </div>
+            <div class="tab">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+            <div class="tab">
+              <p>
+                Suspendisse potenti. Proin sodales in enim eu condimentum.
+              </p>
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Disclaimer -->
+  <footer id="footer" class="main-footer footer-roche-disclaimer">
+    <div class="container footer-top">
+      <div class="col-md-6 col-lg-4">
+        <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
+      </div>
+      <div>
+        <div class="form-group">
+          <p>Sign up for our mailing list</p>
+          <div class="sign-up-from">
+            <input type="text" value="First Name">
+            <input type="text" value="Last Name">
+            <input type="email" value="eMail address">
+            <input id="btn-submit" id="submit" class="button" type="submit" value="SUBMIT">
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <p>Connect with us</p>
+        <div class="social-icon">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+  </div>
+    <div id="footer-copyright" class="copyright footer-roche-copyright">
+      <div class="footer-content container">
+        <div>&copy; 2020 SG Enable. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#" class="privacy-link">Privacy Policy</a>
+          <a href="#" class="privacy-link">Term of Use</a>
+          <a href="#" class="privacy-link">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="assets/js/sge-script.js"></script>
+  <!--script src="pwa.js"></script-->
+
+
+</body>
+</html>

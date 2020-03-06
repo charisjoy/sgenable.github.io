@@ -2837,12 +2837,18 @@ h3{
   font-family: 'Oduda Semi Bold';
   font-size: 18px;
 }
-
+h6,.h6{
+  font-family: 'Oduda Semi Bold';
+  font-size: 23px;
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+p{
+  font-family: 'Avenir Book';
+  font-size: 20px;
+}
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -3138,7 +3144,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-family: 'Oduda Semi Bold';
+  font-size: 35px;
 }
 
 h5, .h5 {
@@ -5118,6 +5125,9 @@ header {
 #topnav-link .active{
   border-top: 18px solid #033d80;
 }
+#topnav-link a:last-child{
+  border-top: transparent !important;
+}
 .topnav-link-contrast .active{
   border-top: 18px solid #95c83d !important;
 }
@@ -5226,4 +5236,156 @@ header {
 }
 .topnav-link-contrast > a:nth-child(5){
   color:black !important;
+}
+#Survey .flex-container{
+  padding: 9px;
+  justify-content: space-around;
+}
+#Survey .flex-container a{
+  background-color: #0056b8;
+  font-family: 'Oduda Semi Bold';
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  width: 216px;
+  padding: 14px 13px 16px 16px;
+  border-radius: 12px;
+}
+.survey-steps{
+  text-align:center;
+  margin-top:154px;
+}
+.survey-steps span:nth-child(11){
+  margin-left: 31px;
+}
+.survey div:nth-child(2){
+  margin-top:24px;
+}
+.step {
+  height: 10px;
+  width: 34px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 12%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+@media (min-width: 1200px){
+  .survey {
+      max-width: 1200px !important;
+  }
+}
+.tab{
+  display:none;
+}
+.tab-wrapper{
+  margin-top:12px;
+  padding:0px;
+}
+.q1{
+  background-color: #e5eef5;
+  padding: 25px;
+  border-radius: 16px;
+}
+.q1 h4{
+  color: #0056b8;
+  margin-bottom:26px;
+}
+.q1 span{
+  display: inline;
+  margin-left: 23px;
+}
+.q1 img{
+  width: 25%;
+  height: 165px;
+  float: right;
+}
+.q1 .block{
+  display: block;
+  margin-left: 2rem;
+}
+.indent-1{
+  margin-left: 2em;
+}
+.indent-2{
+  margin-left: 0.5em;
+}
+/*Style button*/
+/* The container */
+.q1 .container {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: 'Avenir Book';
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.q1 .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.q1  .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.q1  .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.q1 .checkbox:checked:before{
+  background-color:green;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.q1  .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.q1 .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.q1 .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--green);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.q1 textarea{
+  height: 115px;
+  width: 93%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 9px;
+  margin-bottom: 30px;
 }
