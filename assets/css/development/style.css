@@ -17,6 +17,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Avenir Medium;
+  src: url(../../fonts/avenir-medium.ttf);
+}
+@font-face {
+  font-family: Avenir Heavy;
+  src: url(../../fonts/avenir-heavy.ttf);
+}
+@font-face {
+  font-family: Avenir Book;
+  src: url(../../fonts/avenir-book.otf);
+}
+@font-face {
+  font-family: Oduda Semi Bold;
+  src: url(../../fonts/oduda-semi-bold.otf);
+}
 .vjs-icon-play, .video-js .vjs-play-control .vjs-icon-placeholder, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   font-family: VideoJS;
   font-weight: normal;
@@ -1760,6 +1776,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body p{
+  font-family: Avenir Book;
+  font-size:20px;
+}
 
 img {
   width: 100%;
@@ -2812,6 +2832,10 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+h3{
+  font-family: 'Oduda Semi Bold';
+  font-size: 18px;
 }
 
 p {
@@ -4793,17 +4817,25 @@ header {
   padding: 14px 16px;
   text-decoration: none;
 }
+.topnav-right  a:nth-child(5):hover{
+  border-top:transparent !important;
+  .link-background{
+    background-color: red  !important;
+  }
+}
+
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
+
 .topnav-right {
   position: absolute;
-  right: 4rem;
+  right: 2rem;
   top: 1rem;
 }
 .link-background{
   position: absolute;
-  right: 164px;
+  right: 150px;
   height: 138px;
   width: 128px;
   background-color: #95c83d;
@@ -4821,12 +4853,13 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
- /* margin: 7px 7rem 0 2rem;*/
+  font-size: 16px;
   border-radius: 18px;
 }
 .button-login{
   background-color: #033d80;
+  font-family: 'Avenir Medium';
+  font-size: 16px;
 }
 .button-login:hover{
   background-color: #95c83d;
@@ -4859,6 +4892,7 @@ header {
 .simple-sticky a {
   padding-bottom: 0.3125rem;
   text-decoration: none;
+  font-family: 'Avenir Medium';
   font-weight: 500;
   font-size: 16px;
 }
@@ -4961,10 +4995,13 @@ header {
   border-radius: 10px;
   padding: 19px 187px 48px 40px;
 }
-
+.item_control-slide-2-contrast{
+  background-color: black !important;
+}
 .h1-inclusive{
-  font-size: 72px;
   color: #95c83d;
+  font-family: 'Oduda Semi Bold';
+  font-size: 72px;
 }
 .btn-slide{
   position: relative;
@@ -4981,6 +5018,7 @@ header {
   border-radius: 18px;
 }
 .h2-enable-mark{
+  font-family: 'Avenir Heavy';
   font-size:28px;
   color: #ffffff;
 }
