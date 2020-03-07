@@ -4827,7 +4827,9 @@ header {
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
-
+.no-hover:hover{
+  border-top: transparent !important;
+}
 .topnav-right {
   position: absolute;
   right: 2rem;
@@ -5106,7 +5108,7 @@ header {
 .filter-black{
   filter: brightness(7%);
 }
-.topnav-link-contrast a:hover{
+.topnav-link-contrast .hover:hover{
   border-top: 18px solid #95c83d !important;
 }
 .tabcontent{
@@ -5384,7 +5386,7 @@ header {
   border-radius: 9px;
   margin-bottom: 30px;
 }
-.survey .active{
+.survey .survey-steps .active,.survey .navigation .active{
   background-color: #95c83d !important;
 }
 .q2 textarea{

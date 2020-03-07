@@ -11,6 +11,19 @@ function gcmControl(){
   
 }
 
+function hoverIn(){
+  var bg = document.getElementsByClassName("link-background");
+  var nohoverTxt = document.getElementsByClassName("no-hover");
+  bg[0].setAttribute('style', 'background-color : #033d80 !important');
+  nohoverTxt[0].setAttribute('style', 'color : #ffffff !important');
+}
+function hoverOut(){
+  var bg = document.getElementsByClassName("link-background");
+  var nohoverTxt = document.getElementsByClassName("no-hover");
+  bg[0].setAttribute('style', 'background-color : #95c83d');
+  nohoverTxt[0].setAttribute('style', 'color : #007bff !important');
+}
+
 //Index Tab//
 openTabContent(event, 'Aboutus'); //Display default tab
 
@@ -173,5 +186,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             contrast = false;
         }      
   }
+
 
 });
