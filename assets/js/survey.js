@@ -147,65 +147,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 //Button Contrast//
                 document.getElementById("btn-login").style.backgroundColor = '#ffffff';
                 document.getElementById("btn-login").style.color = 'rgb(10,10,10,1)';
-                document.getElementById("btn-survey-slide1").style.backgroundColor = '#ffffff';
-                document.getElementById("btn-survey-slide1").style.color = 'rgb(10,10,10,1)';
-                document.getElementById("btn-survey-slide2").style.backgroundColor = '#ffffff';
-                document.getElementById("btn-survey-slide2").style.color = 'rgb(10,10,10,1)';
                 document.getElementById("footer").style.backgroundColor = 'rgb(10,10,10,1)';
                 document.getElementById("footer-copyright").style.backgroundColor = 'rgb(10,10,10,1)';
                 document.getElementById("global-sticky-menu").style.backgroundColor = 'rgb(10,10,10,1)';          
                 document.getElementById("global-sticky-menu").style.opacity = '100%';
-
-                document.getElementById("btn-learnmore1").className  = 'btn-contrast-on button button-learn-more';      
-                document.getElementById("btn-learnmore2").className  = 'btn-contrast-on button button-learn-more';
-                document.getElementById("btn-learnmore3").className  = 'btn-contrast-on button button-learn-more';  
+  
                 document.getElementById("btn-submit").className  = 'btn-contrast-on button';
                 document.getElementById("global-sticky-menu").className  = 'topnav topnav-contrast simple-sticky sticky';
-                document.getElementById("green-circle-menu").className  = 'green-circle-menu-contrast green-circle-menu accessibility-sticky sticky';
-                document.getElementById("item-svg-slide-1").className  = 'filter-black item-svg';
-                document.getElementById("topnav-link").className  = 'topnav-link-contrast topnav-right';
-                document.getElementById("item_control-slide-2").className  = 'item_control-slide-2-contrast carousel_item_control-slide-2';
-                var y = document.getElementById("Information").className;
-                document.getElementById("Information").className  = 'contrast '+y;
-                var q = document.getElementById("Aboutus").className;
-                document.getElementById("Aboutus").className  = 'aboutus-contrast '+q;
-                
-                        
+                document.getElementById("green-circle-menu").className  = 'green-circle-menu-contrast green-circle-menu accessibility-sticky sticky';               
+                document.getElementById("topnav-link").className  = 'topnav-link-contrast topnav-right';                 
+                                   
                 contrast = true;
             }else{
                 document.getElementById("body-content").style.backgroundColor = "#ffffff";   
                 document.getElementById("body-content").style.color = "rgb(10,10,10,1)";
 
-                var h2 = document.getElementById("body-content").querySelectorAll("h2");  
+                var h2 = document.getElementById("body-content").querySelectorAll("h1,h2,h3,h4,h5,h6");  
                 for (i = 0; i < h2.length; i++) {        
                 h2[i].setAttribute( 'style', 'color : rgb(10,10,10,1)' );
                 }
 
                 //Button Contrast//
                 document.getElementById("btn-login").style.backgroundColor = '#033d80';
-                document.getElementById("btn-login").style.color = '#ffffff';
-                document.getElementById("btn-survey-slide1").style.backgroundColor = '#00a79d';
-                document.getElementById("btn-survey-slide1").style.color = 'rgb(10,10,10,1)';
-                document.getElementById("btn-survey-slide2").style.backgroundColor = '#00a79d';
-                document.getElementById("btn-survey-slide2").style.color = 'rgb(10,10,10,1)';
+                document.getElementById("btn-login").style.color = '#ffffff';     
                 document.getElementById("footer").style.backgroundColor = '#0066cc';
                 document.getElementById("footer-copyright").style.backgroundColor = '#0066cc';
                 document.getElementById("global-sticky-menu").style.backgroundColor = '#e5eef5';
                 document.getElementById("global-sticky-menu").style.opacity = '80%';
-
-                document.getElementById("btn-learnmore1").className  = 'btn-contrast-off button button-learn-more';      
-                document.getElementById("btn-learnmore2").className  = 'btn-contrast-off button button-learn-more';
-                document.getElementById("btn-learnmore3").className  = 'btn-contrast-off button button-learn-more';  
+           
                 document.getElementById("btn-submit").className  = 'btn-contrast-off btn-contrast-on button';
                 document.getElementById("global-sticky-menu").className  = 'topnav simple-sticky sticky';
                 document.getElementById("green-circle-menu").className  = 'green-circle-menu accessibility-sticky sticky';
-                document.getElementById("item-svg-slide-1").className  = 'item-svg';
-                document.getElementById("topnav-link").className  = 'topnav-right';
-                document.getElementById("item_control-slide-2").className  = 'carousel_item_control-slide-2';
-                var y = document.getElementById("Information").className;
-                document.getElementById("Information").className  = y.replace('contrast','');
-                var q = document.getElementById("Aboutus").className;
-                document.getElementById("Aboutus").className  = q.replace('aboutus-contrast','');
+                document.getElementById("topnav-link").className  = 'topnav-right';             
 
                 contrast = false;
             }      
