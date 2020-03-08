@@ -38,13 +38,13 @@
       <a class="active" href="./">
         <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
       </a>
-      <div class="link-background"></div>
+      <div class="link-background" onmouseover="hoverIn();" onmouseout="hoverOut()"></div>
       <div id="topnav-link" class="topnav-right">
-        <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
-        <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
-        <a class="tablinks" href="#about">HONOUR ROLL</a>
-        <a class="tablinks" href="#about">FAQs</a>
-        <a class="tablinks" href="#about">TAKE SURVEY</a>
+        <a class="tablinks hover" onclick="openTabContent(event, 'Information')" href="#Information">ABOUT US</a>
+        <a class="tablinks hover" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
+        <a class="tablinks hover" href="#about">HONOUR ROLL</a>
+        <a class="tablinks hover" href="#about">FAQs</a>
+        <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
         <button id="btn-login" class="button button-login">LOGIN</button>
       </div>
     </div>
@@ -125,6 +125,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+      
       <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
         <div class="green-circle-menu-control">
           <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
@@ -147,8 +148,8 @@
       <!-- Right Image -->
       <article class="right-image row space-top">
         <div class="col-md-6 column-center">
-          <h6>ABOUT  US</h6>
-          <h2>Lorem ipsum dolor aman insep dolor</h2>
+          <h3>ABOUT US</h3>
+          <h4>Lorem ipsum dolor aman insep dolor</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
           <a id="btn-learnmore1" class="button button-learn-more">LEARN MORE</a>
         </div>
@@ -165,7 +166,7 @@
           <div class="information-shadow-left shadow"></div> 
         </div>
         <div class="col-md-6 column-center">
-          <h6>HONOUR ROLL</h6>
+          <h3>HONOUR ROLL</h3>
           <h2>Lorem ipsum dolor aman insep dolor</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.</p>
           <a id="btn-learnmore2" class="button button-learn-more">LEARN MORE</a>
@@ -235,7 +236,7 @@
       </article>
 
     </section>
-
+    
    <!-- <section class="card-box container">
       
       <div class="row space-top space-bottom">
