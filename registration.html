@@ -5,24 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Privacy Policy">
-  <title>Privacy Policy</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <title>Registration</title>
   <link rel="stylesheet" href="assets/css/development/style.css">
-
   <!-- Production -->
   <link rel="stylesheet" href="assets/css/production/global.css">
-
-    <!-- Fab icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/media/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/media/icon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/media/icon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/media/icon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/media/icon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/assets/media/icon/browserconfig.xml">
-    <meta name="theme-color" content="#000000">
 
   <style>
     * {
@@ -45,6 +31,7 @@
       font-size: 14px;
     }
 
+
     .main-header {
       background-color: #ffff;
       padding: 70px 0;
@@ -52,6 +39,24 @@
       position: relative;
       height:70vh;
       margin-left: 38vh;
+      display: flex;
+    }
+
+    
+    .main-header img {
+      position: absolute;
+      z-index: 9;
+      width: 40%;
+      margin-top: 133px;
+    }
+    .header-shadow{
+      position: absolute;
+      width: 74%;
+      height: 49%;
+      background-color: #e5eef5;
+      margin-left: 55%;
+      top: 34%;
+      border-radius: 20px;
     }
 
     .main-header h1 {
@@ -80,10 +85,6 @@
       top: 30px;
       left: 5%;
      
-    }
-
-    .main-header img {
-      width: 90px;
     }
 
     .main-content,
@@ -212,19 +213,20 @@
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
 <body>
-    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
-        <a class="active" href="./">
-          <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
-        </a>
-        <div id="topnav-link" class="topnav-right">
-          <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
-          <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
-          <a class="tablinks" href="#">HONOUR ROLL</a>
-          <a class="tablinks" href="#">FAQs</a>
-          <a class="tablinks" href="#">TAKE SURVEY</a>
-          <button id="btn-login" class="button button-login">LOGIN</button>
-        </div>
-      </div>  
+  <div id="global-sticky-menu" class="topnav simple-sticky sticky">
+    <a class="active" href="./">
+      <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
+    </a>
+    <div class="link-background"></div>
+    <div id="topnav-link" class="topnav-right">
+      <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
+      <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
+      <a class="tablinks" href="#about">HONOUR ROLL</a>
+      <a class="tablinks" href="#about">FAQs</a>
+      <a class="tablinks" href="#about">TAKE SURVEY</a>
+      <button id="btn-login" class="button button-login">LOGIN</button>
+    </div>
+  </div>
   <header class="main-header">
     <div class="col-md-6"> 
       <h1>Apply for the Enabling Mark</h1>
@@ -233,20 +235,23 @@
          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>       
     </div>  
-    <div class="col-md-6 column-center">
-      <img src="assets/media/image/image-2-c.png">  
+    <div class="col-md-6">      
+      <img src="assets/media/image/image-2.png">  
     </div>    
+    <div class="header-shadow"></div>  
   </header>
+  <section></section>
+
+
 
 </main>
 
-<!-- Footer & Disclaimer -->
-<footer id="footer" class="main-footer footer-roche-disclaimer">
+ <!-- Footer & Disclaimer -->
+ <footer id="footer" class="main-footer footer-roche-disclaimer">
   <div class="container footer-top">
     <div class="col-md-6 col-lg-4">
       <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
     </div>
-    
     <div>
       <div class="form-group">
         <p>Sign up for our mailing list</p>
@@ -278,7 +283,6 @@
     </div>
   </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
