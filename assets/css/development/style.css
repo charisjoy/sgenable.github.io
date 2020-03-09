@@ -1839,7 +1839,7 @@ p, .tab-sub-text, .text-box-onscroll, li {
 }
 
 .space-top {
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .space-bottom {
@@ -1992,6 +1992,10 @@ div.card-image.last > *:not(:last-of-type) {
 .right-image > *:first-child {
   padding-right: 8.6%;
 }
+.our-process{
+  top:145px;
+}
+
 @media (max-width: 37.5em) {
   .right-image p {
     margin-bottom: 0;
@@ -1999,7 +2003,8 @@ div.card-image.last > *:not(:last-of-type) {
 }
 
 .left-image > *:last-child {
-  padding-left: 8.6%;
+  padding-left: 2.6%;
+  top:87px;
 }
 @media (max-width: 37.5em) {
   .left-image p {
@@ -2525,6 +2530,61 @@ header.her2-header .title-box h1 {
 .image-box article {
   margin-bottom: 0.5rem;
 }
+.about-img{       
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+}
+.about-shadow{
+  width: 130%;
+  height: 145%;            
+  position: absolute;
+  top: 0;
+  left: 0; 
+  background-color: #ebf5da;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.hroll-img{              
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 9;
+ }
+.hroll-shadow{          
+  width: 125%;
+  height: 177%;            
+  position: absolute;
+  /*top: 71px;*/
+  left: -259px; 
+  background-color: #e5eef5;
+  margin: -2px;
+  border-radius: 20px;
+ }
+
+ .process-img{       
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 9;
+
+}
+.process-shadow{
+  width: 130%;
+  height: 480px;            
+  position: absolute;
+  top: 0;
+  left: 0; 
+  background-color: #ebf5da;
+  margin: 40px;
+  border-radius: 20px;
+}
+ 
+
+
 @media (max-width: 56.25em) {
   .image-box article {
     margin-top: 1.75rem !important;
@@ -3154,6 +3214,8 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+  font-family: 'Avenir';
+  color: #666666;
 }
 
 .lead {
