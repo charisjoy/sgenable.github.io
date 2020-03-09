@@ -44,9 +44,9 @@
       width: 71%;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      -webkit-animation: slide 0.5s forwards;
+      -webkit-animation: slide 1s forwards;
       -webkit-animation-delay: 2s;
-      animation: slide 0.5s forwards;
+      animation: slide 1s forwards;
       animation-delay: 0s;
     }
     @-webkit-keyframes slide {
@@ -74,12 +74,12 @@
     .header-shadow{
       position: absolute;
       width: 46%;
-      height: 49%;
+      height: 37%;
       background-color: #e5eef5;
       margin-left: 54%;
-      top: 34%;
+      top: 32%;
       border-radius: 20px;
-      -webkit-animation: slidebg 0.5s forwards;
+      -webkit-animation: slidebg 1s forwards;
       -webkit-animation-delay: 2s;
       animation: slidebg 1s forwards;
       animation-delay: 0s;
@@ -98,7 +98,6 @@
       position: relative;
       display: flex;
     }
-
 
     .main-header h1 {
       /*text-align: center;*/
@@ -156,6 +155,12 @@
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     }
+    .inline-right{
+      width: 52%;
+    }
+    .salutation{
+      width: 78px !important;
+    }
     .form-group{
       margin-bottom: 15px;
     }
@@ -163,6 +168,19 @@
       .form-control{
         width: 77%;
       }
+    }
+    .login-here{
+      display: inline;
+      padding: 87px;
+      position: relative;
+      top: 10px;
+    }
+    .login-here a{
+      color:#00a79d;
+    }
+    .submit-bt{
+      margin-left: 17px;
+      margin-top: 61px;
     }
     .form-horizontal .label{
         padding-top: 7px;
@@ -293,6 +311,23 @@
       }
     }
     
+    h1{
+      font-family: 'Oduda Semi Bold !important';
+      font-size: 35px !important;
+    }
+    h2{
+      font-family: 'Avenir Book !important';
+      font-size: 28px !important;
+    }
+    p{
+      font-family: 'Avenir Book !important';
+      font-size: 20px !important;
+    }
+    label{
+      font-family: 'Oduda Semi Boldk !important';
+      font-size: 16px !important;
+    }
+
   </style>
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
@@ -324,7 +359,7 @@
         <div><a class="accessibility-normal">A<a></a></div>
         <div><a class="accessibility-large">A+<a></a></div>
         <div><a class="label">TEXT SIZE<p></p></div>
-        <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
+        <div><a class="label">ACCESSIBILITY</a></div>
       </div>    
   </div>
 
@@ -348,67 +383,65 @@
 <div class="registration-container reg-form">
 
   <div class="container">
-    <form class="form-horizontal" action="/action_page.php">
+    <form class="form-horizontal" name="regForm" action="/action_page.php"">
       <div class="form-group">
         <label class="control-label col-sm-2" for="organization">Organization:</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="organization" name="email">
+          <input required type="text" class="form-control" id="organization" name="organization">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="uen">UEN</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="uen" name="email">
+          <input required type="text" class="form-control" id="uen" name="uen">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="salutation">Salutation</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="salutation" name="salutation">
+          <select class="form-control salutation" required id="salutation" name="salutation">
+            <option value="ms">Ms.</option>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+          </select>
         </div>
-      </div>
-      <div class="form-group">
         <label class="control-label col-sm-2" for="firstname">First Name</label>
-        <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="firstname" name="firstname">
-        </div>
+        <input required type="text" class="form-control inline-right" id="firstname" name="firstname">
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="lastname">Last Name</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="lastname" name="lastname">
+          <input required type="text" class="form-control" id="lastname" name="lastname">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="department">Designation/Department</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="department" name="department">
+          <input required type="text" class="form-control" id="department" name="department">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="contact">Contact Number</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="contact" name="contact">
+          <input required type="text" class="form-control" id="contact" name="contact">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="password">Password</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="password" name="password">
+          <input required type="text" class="form-control" id="password" name="password">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="repeatpw">Re-enter Password</label>
         <div class="col-sm-10 inline">
-          <input type="text" class="form-control" id="repeatpw" name="repeatpw">
+          <input required type="text" class="form-control" id="repeatpw" name="repeatpw">
         </div>
       </div>
 
-      <div class="form-group">
-        <button type="submit" class="control-label button">Submit</button>
-        <div class="col-sm-10 inline">
-            <p>Already registered? Log in here.</p>
-        </div>
+      <div class="form-group submit-bt">
+        <input type="submit" class="control-label button"value="REGISTER">
+        <p class="login-here">Already registered? <a href="login.html">Log in here.</a></p>
       </div>
 
     </form>
@@ -459,6 +492,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="assets/js/sge-script.js"></script>
+<script src="assets/js/registration.js"></script>
 <!--script src="pwa.js"></script-->
 
 
