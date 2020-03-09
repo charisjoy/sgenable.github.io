@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>SGE</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fab icon-->
+  <!--
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/icon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/media/icon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/media/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/media/icon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./assets/media/icon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  -->
+  
+  <!-- Development -->
+  <link rel="stylesheet" href="assets/css/development/style.css">
+
+  <!-- Production -->
+  <!-- <link rel="stylesheet" href="assets/css/production/style.min.css"> -->
+
+  <link rel="stylesheet" href="assets/css/production/global.css">
+</head>
+<body id="body-content">
+    <!-- Main Header --> 
+    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
+      <a class="active" href="./">
+        <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
+      </a>
+      <div class="link-background" onmouseover="hoverIn();" onmouseout="hoverOut()"></div>
+      <div id="topnav-link" class="topnav-right">
+        <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
+        <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
+        <a class="tablinks" href="#about">HONOUR ROLL</a>
+        <a class="tablinks" href="#about">FAQs</a>
+        <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" onclick="openTabContent(event, 'Survey')" href="#Survey">TAKE SURVEY</a>
+        <button id="btn-login" class="button button-login">LOGIN</button>
+      </div>
+    </div>
+
+    <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
+      <div class="green-circle-menu-control">
+        <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
+      </div>
+        <div class="green-circle-menu-content">
+          <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
+          <div><a class="label">CONTRAST<a></a></div>
+          <div><a class="accessibility-small">A-<a></a></div>
+          <div><a class="accessibility-normal">A<a></a></div>
+          <div><a class="accessibility-large">A+<a></a></div>
+          <div><a class="label">TEXT SIZE<p></p></div>
+          <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
+        </div>    
+    </div>
+
+  <!-- Main Content -->
+  <main id="bc">
+    
+    <section id="Survey" class="survey container">
+        <div class="survey-steps">
+            <span class="step active"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="current"></span>
+            <span>of</span>
+            <span class="last">10</span>
+        </div>
+        <div class="navigation flex-container">
+          <a onclick="showTab(0)" class="nav-cat active">Leadership, Culture and Climate</a>
+          <a onclick="showTab(1)" class="nav-cat">Recruitment Practices</a>
+          <a onclick="showTab(2)"class="nav-cat">Workplace Accessiblity and Accomodation</a>
+          <a onclick="showTab(3)" class="nav-cat">Employment Practices</a>
+          <a onclick="showTab(4)" class="nav-cat">Community Engagement and Promotion</a>
+        </div>
+        <div class="navigation flex-container">
+          <a onclick="showTab(5)" class="nav-cat">Lorem Impsum Dolor Sit Amet</a>
+          <a onclick="showTab(6)" class="nav-cat">Lorem Impsum Dolor Sit Amet</a>
+          <a onclick="showTab(7)" class="nav-cat">Lorem Impsum Dolor Sit Amet</a>
+          <a onclick="showTab(8)" class="nav-cat">Lorem Impsum Dolor Sit Amet</a>
+          <a onclick="showTab(9)" class="nav-cat">Lorem Impsum Dolor Sit Amet</a>
+        </div>
+
+        <div class="tab-wrapper container">
+            
+            <div class="tab active">
+              <div class="q1"> 
+                  <img src="assets/media/image/image-1.png">
+                  <h4>Leadership, culture and climate</h4>      
+                  <h6>1.<span>Inclusive hiring strategies and goals<span></h6>   
+                  <p class="indent-1">Hiring strategies and goals for the recruitment of persons with disabilities. Inclusive employer value proposition which can be included in mission and vission statements</p>   
+                  <label class="container"><p>There are no strategies and goals to hire persons with disabilities.</p>
+                    <input class="chk" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>   
+                  <label class="container"><p>There are broad strategies and goals to hire persons with disabilities, while specifics may not have been worked out.</p>
+                    <input class="chk" type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label>  
+                  <label class="container"><p>There are well-defined strategies and goals to hire persons with disabilities and to ensure that opportunities are provided for them.</p>
+                    <input class="chk" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"><p>There are long-term, well-defined strategies and goals to hire persons with disabilities, which are linked to the overall Employer Value Proosition</p>
+                    <input class="chk" type="checkbox" >
+                    <span class="checkmark"></span>
+                  </label> 
+                  <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                  <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>
+                  <textarea class="block" name="other-info"></textarea>
+                  <div class="indent-1">
+                      <label for="myfile">Select a file:</label>
+                      <input type="file" id="myfile" name="myfile"><br><br>
+                  </div>
+              </div>
+              <div class="q2">                    
+                <h6>2.<span>Leadership commitment to disability inclusion<span></h6>   
+                <p class="indent-1">Commitment of CEO and the senior management team. Organisation-wid public commitment to disability inclusion (e.g values, mission statement, communication to public)</p>   
+                <label class="container"><p>There is no visible leadership commitment to disability inclusion.</p>
+                  <input class="chk" type="checkbox">
+                  <span class="checkmark"></span>
+                </label>   
+                <label class="container"><p>The organisation is committed to Diversity & Inclusion (not specifi to Disability Inclusion).</p>
+                  <input class="chk" type="checkbox" >
+                  <span class="checkmark"></span>
+                </label>  
+                <label class="container"><p>The organisation is committed to Disability Inclusion and this is endorsed by senior management</p>
+                  <input class="chk" type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>The organization and its CEO actively communicate about Disability Inclusion to both internal and external stakeholders</p>
+                  <input class="chk" type="checkbox" >
+                  <span class="checkmark"></span>
+                </label> 
+                <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                <img src="assets/media/image/image-1.png">
+                <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>   
+                <textarea class="block" name="other-info"></textarea>
+                <div class="indent-1">
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile"><br><br>
+                </div>
+              </div>  
+              <div class="q3">                                
+                <h6>3.<span>Disability inclusion training<span></h6>   
+                <p class="indent-1">Introductory-level training on disability awareness and supporting employees with disabilities. In-depth training on different aspects of disability inclusion. Training is extended to a wide group of employees</p>   
+                <label class="container"><p>Empoyees or supervisors are not trained to work with employees with disabilities.</p>
+                  <input class="chk" type="checkbox">
+                  <span class="checkmark"></span>
+                </label>   
+                <label class="container"><p>Supervisors and HR have basic disability awareness training to understand employees with disabilities</p>
+                  <input class="chk" type="checkbox" >
+                  <span class="checkmark"></span>
+                </label>  
+                <label class="container"><p>Supervisors, HR and co-workers have basic disability awareness training to understand employees with disabilities.</p>
+                  <input class="chk" type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>All employees in the hiring departments have basic disability aware training. This is also integrated with the broader organization training roadmap</p>
+                  <input class="chk" type="checkbox" >
+                  <span class="checkmark"></span>
+                </label> 
+                <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>
+                <textarea class="block" name="other-info"></textarea>
+                <div class="indent-1">
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile"><br><br>
+                </div>
+              </div>                     
+            </div>         
+            <div class="tab">
+              <div class="q1">              
+                <h4>Recruitment Practices</h4>      
+                <h6>Vestibulum viverra urna quam, eget dictum libero convallis non. Etiam ac metus lectus. Fusce ac malesuada nibh. Aliquam erat volutpat. Morbi dolor purus, euismod sit amet ipsum et, condimentum volutpat neque. Nam mattis sollicitudin imperdiet. Donec mollis venenatis condimentum. Donec malesuada ultrices nibh ut viverra. Maecenas auctor suscipit nisl, vel fringilla massa.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Workplace Accessiblity and Accomodation</h4>      
+                <h6>Praesent massa lacus, placerat tincidunt urna vitae, fermentum consequat risus. Praesent vel ligula vitae neque placerat elementum. Quisque pellentesque, elit non auctor dapibus, nulla purus molestie velit, in semper tortor sem et ex. Curabitur placerat condimentum nulla, quis tincidunt ante pulvinar et. Sed maximus congue sapien et dapibus. Vestibulum sagittis, purus nec dignissim feugiat, nisi libero placerat eros, a imperdiet sem odio vel nisi. Etiam malesuada scelerisque ipsum vitae ultricies. Quisque suscipit massa vel ultricies suscipit. Nam vulputate rutrum diam nec consectetur. Vestibulum ullamcorper condimentum nisi, eget aliquam turpis egestas nec. Nulla quis risus volutpat nibh malesuada cursus eu ac leo. Morbi ultrices est non ipsum lacinia suscipit. Pellentesque eros neque, vestibulum quis tristique eget, fermentum at dolor. Maecenas pretium porttitor gravida.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Employment Practices</h4>      
+                <h6>Cras quis aliquet ipsum. Vivamus vulputate vel nisl a mattis. Donec nec tempor mauris, vel aliquet mauris. Duis tincidunt nisi ut neque fermentum, eu fermentum risus lobortis. Curabitur venenatis nulla ut erat condimentum, et mollis neque consectetur. Praesent arcu mauris, imperdiet eu sodales sed, viverra et lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pretium sed ante in aliquam. Morbi venenatis posuere semper. Phasellus luctus neque sit amet augue malesuada fermentum. Nullam eros ipsum, mollis eu elementum a, viverra eu tellus.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Community Engagement and Promotion</h4>      
+                <h6>Fusce elementum, odio eu convallis finibus, est ligula mollis mauris, at aliquet nunc ligula vitae purus. Ut condimentum ipsum et turpis bibendum, non vulputate libero tempor. Morbi vehicula dolor quis sem suscipit, eget tempus nisl consequat. Etiam at quam vel metus porttitor egestas. Nulla purus tortor, hendrerit ut porttitor a, ultricies id felis. Pellentesque hendrerit ornare ipsum, vehicula sodales eros. Aliquam suscipit augue sed lacus auctor volutpat. Etiam quis diam lectus. Pellentesque molestie metus dui. Vivamus eu augue sollicitudin, dapibus arcu vel, sagittis neque. Phasellus varius ac augue sit amet aliquam. Morbi in condimentum erat. Maecenas non pellentesque est. Proin ornare bibendum diam, sit amet scelerisque dolor rhoncus vel. Maecenas laoreet velit id diam mattis ullamcorper. Proin ullamcorper turpis ut sem pretium auctor sed a ligula.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Recruitment Practices</h4>      
+                <h6>Cras eros sem, consequat eget augue vitae, auctor ornare lorem. Proin mollis tempor arcu nec posuere. Vivamus volutpat neque a dictum aliquam. Integer hendrerit eget nisi ac malesuada. In eget ornare ex, tincidunt ullamcorper nulla. Morbi quis sem iaculis elit suscipit tempus. Morbi blandit risus ac nisl placerat sodales. Vestibulum ut laoreet metus, sit amet aliquet dui. Ut a diam ut magna vestibulum placerat non et ex. Donec varius porta lectus at iaculis. Sed iaculis facilisis lorem, quis imperdiet arcu. Suspendisse potenti. Integer et tristique dolor.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Lorem Impsum Dolor Sit Amet</h4>      
+                <h6>Vivamus sed nisi rutrum, viverra mi vitae, pharetra turpis. Nunc tempor mauris est, sit amet semper dolor fringilla at. Nullam a bibendum urna. Praesent accumsan, orci eget cursus consectetur, elit ipsum vehicula sem, id fermentum eros nisi ut elit. Maecenas tincidunt condimentum dapibus. Nam enim elit, tincidunt eget dolor non, semper pellentesque nulla. Cras ac justo non eros finibus blandit. Aliquam blandit dolor id lobortis consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Lorem Impsum Dolor Sit Amet</h4>      
+                <h6>Nulla laoreet purus vitae sapien luctus, vel porttitor dolor eleifend. Proin id molestie nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus auctor, nulla at porttitor ultrices, eros dolor malesuada dolor, nec pellentesque ante sem sit amet metus. Vestibulum eget commodo enim, in interdum ex. Aenean bibendum condimentum lacus id luctus. Praesent quis tempor ex. Curabitur vulputate, justo vitae rutrum ultricies, quam purus egestas lacus, eu eleifend urna lectus a mauris. Nullam nec tempus urna. Sed fermentum lectus ut lorem finibus ultricies. Aenean rutrum risus at semper faucibus. Morbi eu nisi ante. Praesent sodales metus at volutpat placerat. Donec laoreet tellus leo, quis tristique neque volutpat at.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Lorem Impsum Dolor Sit Amet</h4>      
+                <h6>Integer pulvinar tincidunt lacus eu pharetra. Integer consequat est at metus tincidunt, nec viverra lacus dapibus. Sed egestas sapien et volutpat facilisis. In a ultricies quam. Nam iaculis pharetra orci, nec ultricies diam aliquam nec. Donec pulvinar eros tempor est lacinia ultricies. Donec et tellus porta, convallis purus in, tincidunt ipsum. Cras efficitur orci diam, nec aliquam elit luctus ut. Nam pulvinar, ligula eu varius consequat, tortor arcu tristique dolor, at tempus orci mi id nunc. Fusce aliquet tempor ipsum non cursus. Donec ipsum eros, viverra ut elementum eget, tincidunt vel tortor. Praesent efficitur bibendum odio non fringilla. Nunc facilisis pharetra rhoncus. Nullam ut scelerisque nisi.</h6>
+              </div>
+            </div>
+            <div class="tab">
+              <div class="q1">              
+                <h4>Lorem Impsum Dolor Sit Amet</h4>      
+                <h6>Cras eros sem, consequat eget augue vitae, auctor ornare lorem. Proin mollis tempor arcu nec posuere. Vivamus volutpat neque a dictum aliquam. Integer hendrerit eget nisi ac malesuada. In eget ornare ex, tincidunt ullamcorper nulla. Morbi quis sem iaculis elit suscipit tempus. Morbi blandit risus ac nisl placerat sodales. Vestibulum ut laoreet metus, sit amet aliquet dui. Ut a diam ut magna vestibulum placerat non et ex. Donec varius porta lectus at iaculis. Sed iaculis facilisis lorem, quis imperdiet arcu. Suspendisse potenti. Integer et tristique dolor.</h6>
+              </div>
+            </div>
+
+            <div class="survey-btn flex-container">
+              <div><a href="./">BACK TO DASHBOARD</a></div>
+              <div><a onclick="clearCheckbox()">CLEAR</a></div>
+              <div><a href="" onclick="save()">SAVE</a></div>         
+            </div> 
+            <div><button onclick="showTab()" class="btn-next button">NEXT</button></div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Disclaimer -->
+  <footer id="footer" class="main-footer footer-roche-disclaimer">
+    <div class="container footer-top">
+      <div class="col-md-6 col-lg-4">
+        <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
+      </div>
+      <div>
+        <div class="form-group">
+          <p>Sign up for our mailing list</p>
+          <div class="sign-up-from">
+            <input type="text" value="First Name">
+            <input type="text" value="Last Name">
+            <input type="email" value="eMail address">
+            <input id="btn-submit" id="submit" class="button" type="submit" value="SUBMIT">
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <p>Connect with us</p>
+        <div class="social-icon">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+  </div>
+    <div id="footer-copyright" class="copyright footer-roche-copyright">
+      <div class="footer-content container">
+        <div>&copy; 2020 SG Enable. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#" class="privacy-link">Privacy Policy</a>
+          <a href="#" class="privacy-link">Term of Use</a>
+          <a href="#" class="privacy-link">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!--script src="assets/js/sge-script.js"></script-->
+  <script src="assets/js/survey.js"></script>
+  <!--script src="pwa.js"></script-->
+
+
+</body>
+</html>

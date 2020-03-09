@@ -11,7 +11,24 @@ function gcmControl(){
   
 }
 
+function hoverIn(){
+  var bg = document.getElementsByClassName("link-background");
+  var nohoverTxt = document.getElementsByClassName("no-hover");
+  bg[0].setAttribute('style', 'background-color : #033d80 !important');
+  nohoverTxt[0].setAttribute('style', 'color : #ffffff !important');
+}
+function hoverOut(){
+  var bg = document.getElementsByClassName("link-background");
+  var nohoverTxt = document.getElementsByClassName("no-hover");
+  bg[0].setAttribute('style', 'background-color : #95c83d');
+  nohoverTxt[0].setAttribute('style', 'color : #007bff !important');
+}
+
+//Index Tab//
+openTabContent(event, 'Aboutus'); //Display default tab
+
 function openTabContent(evt, linkName) {
+
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -24,13 +41,19 @@ function openTabContent(evt, linkName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+  if(evt != undefined)
+    evt.currentTarget.className += " active";
+}
 
-  evt.currentTarget.className += " active";
-  
+function clearCheckbox(){
+  var x = document.getElementsByClassName("chk");
+  for (i = 0; i < x.length; i++) {
+    x[i].checked = false;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {  
-  var txtSize = 16;
+  var txtSize = 20;
   var contrast = false;
   document.querySelector('.accessibility-small').addEventListener("click",smallText);
       // addEventListener(event, function, useCapture)
@@ -43,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           for (i = 0; i < x.length; i++) {        
             x[i].setAttribute( 'style', 'font-size: 14px !important' );
           } 
-          txtSize = 14;
+          txtSize = 18;
         }else{  
           txtSize = txtSize - 2;          
           for (i = 0; i < x.length; i++) {        
@@ -60,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         for (i = 0; i < x.length; i++) {        
           x[i].setAttribute( 'style', 'font-size: 16px !important' );
         }
-        txtSize = 16; 
+        txtSize = 20; 
              
   }
   document.querySelector('.accessibility-large').addEventListener("click",largeText);
@@ -74,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           for (i = 0; i < x.length; i++) {        
             x[i].setAttribute( 'style', 'font-size: 18px !important' );
           } 
-          txtSize = 18;
+          txtSize = 22;
         }else{  
           txtSize = txtSize + 2;          
           for (i = 0; i < x.length; i++) {        
@@ -106,8 +129,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("btn-survey-slide2").style.color = 'rgb(10,10,10,1)';
             document.getElementById("footer").style.backgroundColor = 'rgb(10,10,10,1)';
             document.getElementById("footer-copyright").style.backgroundColor = 'rgb(10,10,10,1)';
-            document.getElementById("global-sticky-menu").style.backgroundColor = 'rgb(10,10,10,1)';
-            document.getElementById("item_control-slide-2").style.backgroundColor = 'rgb(10,10,10,1)';
+            document.getElementById("global-sticky-menu").style.backgroundColor = 'rgb(10,10,10,1)';          
             document.getElementById("global-sticky-menu").style.opacity = '100%';
 
             document.getElementById("btn-learnmore1").className  = 'btn-contrast-on button button-learn-more';      
@@ -118,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("green-circle-menu").className  = 'green-circle-menu-contrast green-circle-menu accessibility-sticky sticky';
             document.getElementById("item-svg-slide-1").className  = 'filter-black item-svg';
             document.getElementById("topnav-link").className  = 'topnav-link-contrast topnav-right';
+            document.getElementById("item_control-slide-2").className  = 'item_control-slide-2-contrast carousel_item_control-slide-2';
             var y = document.getElementById("Information").className;
             document.getElementById("Information").className  = 'contrast '+y;
             var q = document.getElementById("Aboutus").className;
@@ -139,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("btn-login").style.color = '#ffffff';
             document.getElementById("btn-survey-slide1").style.backgroundColor = '#00a79d';
             document.getElementById("btn-survey-slide1").style.color = 'rgb(10,10,10,1)';
-            document.getElementById("btn-survey-slide2").style.backgroundColor = '#ffffff';
+            document.getElementById("btn-survey-slide2").style.backgroundColor = '#00a79d';
             document.getElementById("btn-survey-slide2").style.color = 'rgb(10,10,10,1)';
             document.getElementById("footer").style.backgroundColor = '#0066cc';
             document.getElementById("footer-copyright").style.backgroundColor = '#0066cc';
@@ -154,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById("green-circle-menu").className  = 'green-circle-menu accessibility-sticky sticky';
             document.getElementById("item-svg-slide-1").className  = 'item-svg';
             document.getElementById("topnav-link").className  = 'topnav-right';
+            document.getElementById("item_control-slide-2").className  = 'carousel_item_control-slide-2';
             var y = document.getElementById("Information").className;
             document.getElementById("Information").className  = y.replace('contrast','');
             var q = document.getElementById("Aboutus").className;
@@ -162,5 +186,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             contrast = false;
         }      
   }
+
 
 });

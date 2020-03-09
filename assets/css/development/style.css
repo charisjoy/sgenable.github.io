@@ -17,6 +17,26 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Avenir Medium;
+  src: url(../../fonts/avenir-medium.ttf);
+}
+@font-face {
+  font-family: Avenir Heavy;
+  src: url(../../fonts/avenir-heavy.ttf);
+}
+@font-face {
+  font-family: Avenir Nex Demi Bold;
+  src: url(../../fonts/avenir-next-Demi-bold.ttf);
+}
+@font-face {
+  font-family: Avenir Book;
+  src: url(../../fonts/avenir-book.otf);
+}
+@font-face {
+  font-family: Oduda Semi Bold;
+  src: url(../../fonts/oduda-semi-bold.otf);
+}
 .vjs-icon-play, .video-js .vjs-play-control .vjs-icon-placeholder, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
   font-family: VideoJS;
   font-weight: normal;
@@ -1760,6 +1780,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body p{
+  font-family: Avenir Book;
+  font-size:20px;
+}
 
 img {
   width: 100%;
@@ -2872,12 +2896,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-
+h3{
+  font-family: 'Oduda Semi Bold';
+  font-size: 18px;
+}
+h6,.h6{
+  font-family: 'Oduda Semi Bold';
+  font-size: 23px;
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+p{
+  font-family: 'Avenir Book';
+  font-size: 20px;
+}
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -3173,7 +3207,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-family: 'Oduda Semi Bold';
+  font-size: 35px;
 }
 
 h5, .h5 {
@@ -4857,14 +4892,17 @@ header {
 .topnav-right a:hover{
   border-top: 18px solid #033d80;
 }
+.no-hover:hover{
+  border-top: transparent !important;
+}
 .topnav-right {
   position: absolute;
-  right: 4rem;
+  right: 2rem;
   top: 1rem;
 }
 .link-background{
   position: absolute;
-  right: 164px;
+  right: 150px;
   height: 138px;
   width: 128px;
   background-color: #95c83d;
@@ -4882,12 +4920,13 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
- /* margin: 7px 7rem 0 2rem;*/
+  font-size: 16px;
   border-radius: 18px;
 }
 .button-login{
   background-color: #033d80;
+  font-family: 'Avenir Medium';
+  font-size: 16px;
 }
 .button-login:hover{
   background-color: #95c83d;
@@ -4920,6 +4959,7 @@ header {
 .simple-sticky a {
   padding-bottom: 0.3125rem;
   text-decoration: none;
+  font-family: 'Avenir Medium';
   font-weight: 500;
   font-size: 16px;
 }
@@ -5022,10 +5062,13 @@ header {
   border-radius: 10px;
   padding: 19px 187px 48px 40px;
 }
-
+.item_control-slide-2-contrast{
+  background-color: black !important;
+}
 .h1-inclusive{
-  font-size: 72px;
   color: #95c83d;
+  font-family: 'Oduda Semi Bold';
+  font-size: 72px;
 }
 .btn-slide{
   position: relative;
@@ -5042,6 +5085,7 @@ header {
   border-radius: 18px;
 }
 .h2-enable-mark{
+  font-family: 'Avenir Heavy';
   font-size:28px;
   color: #ffffff;
 }
@@ -5085,7 +5129,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 999;
-  top: 477px;
+  top: 288px;
   right: -9rem;
   color: #0056b8;
 }
@@ -5129,17 +5173,20 @@ header {
 .filter-black{
   filter: brightness(7%);
 }
-.topnav-link-contrast a:hover{
+.topnav-link-contrast .hover:hover{
   border-top: 18px solid #95c83d !important;
 }
 .tabcontent{
   display: none;
 }
-#bc .active{
+/*#bc .active{
   display: block;
-}
+}*/
 #topnav-link .active{
   border-top: 18px solid #033d80;
+}
+#topnav-link a:last-child{
+  border-top: transparent !important;
 }
 .topnav-link-contrast .active{
   border-top: 18px solid #95c83d !important;
@@ -5249,4 +5296,201 @@ header {
 }
 .topnav-link-contrast > a:nth-child(5){
   color:black !important;
+}
+#Survey .flex-container{
+  padding: 9px;
+  justify-content: space-around;
+}
+#Survey .navigation a{
+  background-color: #0056b8;
+  font-family: 'Oduda Semi Bold';
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  width: 216px;
+  padding: 14px 13px 16px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.survey-steps{
+  text-align:center;
+  margin-top:154px;
+  margin-bottom: 25px;
+}
+.survey-steps span:nth-child(11){
+  margin-left: 31px;
+}
+.step {
+  height: 10px;
+  width: 34px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 12%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.tab{
+  display:none;
+}
+.tab-wrapper{
+  margin-top:12px;
+  padding:0px;
+}
+.q1{
+  background-color: #e5eef5;
+  padding: 25px;
+  border-radius: 16px;
+}
+.q2{
+  background-color: #ebf5da;
+  padding: 25px;
+  border-radius: 16px;
+}
+.q3{
+  background-color: #e5eef5;
+  padding: 25px;
+  border-radius: 16px;
+}
+.survey h4{
+  color: #0056b8;
+  margin-bottom:26px;
+}
+.survey span{
+  margin-left: 23px;
+}
+.survey img{
+  width: 25%;
+  height: 165px;
+  float: right;
+}
+.survey .block{
+  display: block;
+  margin-left: 2rem;
+}
+.indent-1{
+  margin-left: 2em;
+}
+.indent-2{
+  margin-left: 0.5em;
+}
+/*Style button*/
+/* The container */
+.survey .container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: 'Avenir Book';
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.survey label p{
+  margin-left:80px;
+}
+
+/* Hide the browser's default checkbox */
+.survey .container input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.survey  .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.survey  .container:hover input[type=checkbox] ~ .checkmark {
+  background-color: #ccc;
+}
+
+.survey .checkbox:checked:before{
+  background-color:green;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.survey  .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.survey .container input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.survey .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--green);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.survey textarea{
+  height: 115px;
+  width: 93%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 9px;
+  margin-bottom: 30px;
+}
+.survey .survey-steps .active,.survey .navigation .active{
+  background-color: #95c83d !important;
+}
+.q2 textarea{
+  width: 67% !important;
+}
+::-webkit-file-upload-button {
+    background-color: #00a79d;
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
+}
+.survey-btn{
+  padding:0 !important;
+  justify-content: flex-start !important;
+  margin-top: 60px;
+}
+.survey-btn a{
+  text-decoration: underline !important;
+}
+
+.survey-btn div:first-child{
+  margin-right: 100px;
+}
+.survey-btn div:nth-child(2){
+  margin-right: 100px;
+}
+.survey-btn div:last-child{
+  float:right;
+}
+.btn-next{
+  position: relative;
+  top: -42px;
+  float: right;
 }
