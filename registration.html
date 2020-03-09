@@ -73,13 +73,32 @@
     }
     .header-shadow{
       position: absolute;
-      width: 74%;
+      width: 46%;
       height: 49%;
       background-color: #e5eef5;
-      margin-left: 55%;
+      margin-left: 54%;
       top: 34%;
       border-radius: 20px;
+      -webkit-animation: slidebg 0.5s forwards;
+      -webkit-animation-delay: 2s;
+      animation: slidebg 1s forwards;
+      animation-delay: 0s;
     }
+    @-webkit-keyframes slidebg {
+    100% { right : 100; }
+    }
+
+    @keyframes slidebg {
+      from {left: 800px;}
+      to {left: 0px}
+    }
+    .main-header {
+      background-color: #ffff;
+      padding: 70px 0;
+      position: relative;
+      display: flex;
+    }
+
 
     .main-header h1 {
       /*text-align: center;*/
