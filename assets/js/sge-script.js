@@ -164,3 +164,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
 });
+
+function validateForm() {
+  var x = document.forms["regForm"]["password"].value;
+  var y = document.forms["regForm"]["repeatpw"].value;
+  if (x != y) {
+    alert("Password not Match");
+    return false;
+  }
+}
