@@ -5314,7 +5314,6 @@ header {
 .survey .container {
   display: block;
   position: relative;
-  padding-left: 80px;
   margin-bottom: 12px;
   cursor: pointer;
   font-family: 'Avenir Book';
@@ -5323,6 +5322,10 @@ header {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.survey label p{
+  margin-left:62px;
 }
 
 /* Hide the browser's default checkbox */
