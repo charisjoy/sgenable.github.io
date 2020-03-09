@@ -26,6 +26,10 @@
   src: url(../../fonts/avenir-heavy.ttf);
 }
 @font-face {
+  font-family: Avenir Nex Demi Bold;
+  src: url(../../fonts/avenir-next-Demi-bold.ttf);
+}
+@font-face {
   font-family: Avenir Book;
   src: url(../../fonts/avenir-book.otf);
 }
