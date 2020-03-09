@@ -273,7 +273,7 @@
       <a class="tablinks" onclick="openTabContent(event, 'Aboutus')" href="#Aboutus">HOW TO APPLY</a>
       <a class="tablinks" href="#about">HONOUR ROLL</a>
       <a class="tablinks" href="#about">FAQs</a>
-      <a class="tablinks" href="#about">TAKE SURVEY</a>
+      <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
       <button id="btn-login" class="button button-login">LOGIN</button>
     </div>
   </div>
@@ -360,7 +360,21 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!--script src="pwa.js"></script-->
+<script>
+    function hoverIn(){
+    var bg = document.getElementsByClassName("link-background");
+    var nohoverTxt = document.getElementsByClassName("no-hover");
+    bg[0].setAttribute('style', 'background-color : #033d80 !important');
+    nohoverTxt[0].setAttribute('style', 'color : #ffffff !important');
+    }
+    function hoverOut(){
+    var bg = document.getElementsByClassName("link-background");
+    var nohoverTxt = document.getElementsByClassName("no-hover");
+    bg[0].setAttribute('style', 'background-color : #95c83d');
+    nohoverTxt[0].setAttribute('style', 'color : #007bff !important');
+    }
+</script>
+<!--\script src="pwa.js"></script-->
 
 
 </body>
