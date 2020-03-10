@@ -62,6 +62,9 @@ function showTab(n){
     */
     //... and run a function that will display the correct step indicator:
     fixStepIndicator(n)
+    const currentTabIndicator = document.querySelector('.current');
+    let currentTabNumber = document.createTextNode(currentTab + 1);
+    currentTabIndicator.innerText = currentTabNumber.wholeText;
 }
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
@@ -184,4 +187,53 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }      
     }
 
-});    
+});
+
+const uploadFile1 = document.getElementById("uploadFile1");
+const uploadBtn1 = document.getElementById("uploadBtn1");
+const uploadText1 = document.getElementById("uploadText1");
+
+const uploadFile2 = document.getElementById("uploadFile2");
+const uploadBtn2 = document.getElementById("uploadBtn2");
+const uploadText2 = document.getElementById("uploadText2");
+
+
+const uploadFile3 = document.getElementById("uploadFile3");
+const uploadBtn3 = document.getElementById("uploadBtn3");
+const uploadText3 = document.getElementById("uploadText3");
+
+uploadBtn1.addEventListener('click', function() {
+  uploadFile1.click();
+});
+
+uploadBtn2.addEventListener('click', function() {
+  uploadFile2.click();
+});
+
+uploadBtn3.addEventListener('click', function() {
+  uploadFile3.click();
+});
+
+uploadFile1.addEventListener('change', function() {
+  if (uploadFile1.value) {
+    uploadText1.innerHTML = uploadFile1.files[0].name;
+  } else {
+    uploadText1.innerHTML = "No file chosen";
+  }
+});
+
+uploadFile2.addEventListener('change', function() {
+  if (uploadFile2.value) {
+    uploadText2.innerHTML = uploadFile2.files[0].name;
+  } else {
+    uploadText2.innerHTML = "No file chosen";
+  }
+});
+
+uploadFile3.addEventListener('change', function() {
+  if (uploadFile3.value) {
+    uploadText3.innerHTML = uploadFile3.files[0].name;
+  } else {
+    uploadText3.innerHTML = "No file chosen";
+  }
+});
