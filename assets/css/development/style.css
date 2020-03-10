@@ -4886,7 +4886,7 @@ header {
   text-decoration: none;
 }
 .topnav-right a:hover{
-  border-top: 18px solid #033d80;
+  border-top: 12px solid #033d80;
 }
 .no-hover:hover{
   border-top: transparent !important;
@@ -5246,6 +5246,11 @@ header {
 .flex-container{
   display: flex;
 }
+
+.align-center {
+  align-items: center;
+}
+
 .information-content-right{
   margin-left: 5rem;
 }
@@ -5298,7 +5303,7 @@ header {
   padding: 9px;
   justify-content: space-around;
 }
-#Survey .navigation a{
+#Survey .navigation a {
   background-color: #0056b8;
   font-family: 'Oduda Semi Bold';
   font-size: 17px;
@@ -5306,6 +5311,7 @@ header {
   color: #ffffff;
   width: 216px;
   padding: 14px 13px 16px 16px;
+  margin-right: 20px;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -5318,12 +5324,12 @@ header {
   margin-left: 31px;
 }
 .step {
-  height: 10px;
-  width: 34px;
+  height: 12px;
+  width: 30px;
   margin: 0 2px;
   background-color: #bbbbbb;
   border: none;
-  border-radius: 12%;
+  border-radius: 12px;
   display: inline-block;
   opacity: 0.5;
 }
@@ -5432,10 +5438,10 @@ header {
 
 /* Style the checkmark/indicator */
 .survey .container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  left: 12px;
+  top: -8px;
+  width: 10px;
+  height: 25px;
   border: solid var(--green);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -5453,6 +5459,7 @@ header {
 }
 .survey .survey-steps .active,.survey .navigation .active{
   background-color: #95c83d !important;
+  color: #0056b8 !important;
 }
 .q2 textarea{
   width: 67% !important;
@@ -5474,7 +5481,9 @@ header {
   margin-top: 60px;
 }
 .survey-btn a{
-  text-decoration: underline !important;
+  font-weight: 600;
+  color: #55beb6;
+  border-bottom: 1px solid #55beb6;
 }
 
 .survey-btn div:first-child{
@@ -5490,4 +5499,52 @@ header {
   position: relative;
   top: -42px;
   float: right;
+}
+
+.file-upload {
+  display: none;
+}
+
+.file-upload-btn {
+  display: inline-block;
+  padding: 9px 30px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #00a79d;
+  color: #fff;
+}
+
+.mt {
+  margin-top: 70px;
+}
+
+
+.q1 .h6-title, .q1 .h6,
+.q2 .h6-title, .q2 .h6,
+.q3 .h6-title, .q3 .h6 {
+  font-family: 'Oduda Semi Bold';
+}
+
+.q1 .h6-title,
+.q2 .h6-title,
+.q3 .h6-title {
+  font-size: 23px;
+}
+
+.q1 .h6,
+.q2 .h6,
+.q3 .h6 {
+  font-size: 20px;
+}
+
+.q1 .qo, 
+.q2 .qo, 
+.q3 .qo {
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
 }

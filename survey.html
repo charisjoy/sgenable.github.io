@@ -104,7 +104,7 @@
               <div class="q1"> 
                   <img src="assets/media/image/image-1.png">
                   <h4>Leadership, culture and climate</h4>      
-                  <h6>1.<span>Inclusive hiring strategies and goals<span></h6>   
+                  <h6 class="h6-title">1.<span>Inclusive hiring strategies and goals<span></h6>   
                   <p class="indent-1">Hiring strategies and goals for the recruitment of persons with disabilities. Inclusive employer value proposition which can be included in mission and vission statements</p>   
                   <label class="container"><p>There are no strategies and goals to hire persons with disabilities.</p>
                     <input class="chk" type="checkbox">
@@ -122,16 +122,19 @@
                     <input class="chk" type="checkbox" >
                     <span class="checkmark"></span>
                   </label> 
-                  <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                  <p class="indent-2"><span class="h6">Additional information </span><span class="qo">(Optional)</span></p>   
                   <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>
                   <textarea class="block" name="other-info"></textarea>
                   <div class="indent-1">
-                      <label for="myfile">Select a file:</label>
-                      <input type="file" id="myfile" name="myfile"><br><br>
+                      <label for="myfile">Upload Documents:</label>
+                      <input id="uploadFile1" class="file-upload" type="file" name="myfile">
+                      <button id="uploadBtn1" class="file-upload-btn" type="button">Browse</button>
+                      <span id="uploadText1">No file chosen</span>
+                      <!-- <input type="file" id="myfile" name="myfile"><br><br> -->
                   </div>
               </div>
               <div class="q2">                    
-                <h6>2.<span>Leadership commitment to disability inclusion<span></h6>   
+                <h6 class="h6-title">2.<span>Leadership commitment to disability inclusion<span></h6>   
                 <p class="indent-1">Commitment of CEO and the senior management team. Organisation-wid public commitment to disability inclusion (e.g values, mission statement, communication to public)</p>   
                 <label class="container"><p>There is no visible leadership commitment to disability inclusion.</p>
                   <input class="chk" type="checkbox">
@@ -149,17 +152,20 @@
                   <input class="chk" type="checkbox" >
                   <span class="checkmark"></span>
                 </label> 
-                <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
-                <img src="assets/media/image/image-1.png">
+                <p class="indent-2"><span class="h6">Additional information </span><span class="qo">(Optional)</span></p>   
+                <img class="mt" src="assets/media/image/image-1.png">
                 <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>   
                 <textarea class="block" name="other-info"></textarea>
                 <div class="indent-1">
-                    <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile"><br><br>
+                    <label for="myfile">Upload Documents:</label>
+                    <input id="uploadFile2" class="file-upload" type="file" name="myfile">
+                    <button id="uploadBtn2" class="file-upload-btn" type="button">Browse</button>
+                    <span id="uploadText2">No file chosen</span>
+                    <!-- <input type="file" id="myfile" name="myfile"><br><br> -->
                 </div>
               </div>  
               <div class="q3">                                
-                <h6>3.<span>Disability inclusion training<span></h6>   
+                <h6 class="h6-title">3.<span>Disability inclusion training<span></h6>   
                 <p class="indent-1">Introductory-level training on disability awareness and supporting employees with disabilities. In-depth training on different aspects of disability inclusion. Training is extended to a wide group of employees</p>   
                 <label class="container"><p>Empoyees or supervisors are not trained to work with employees with disabilities.</p>
                   <input class="chk" type="checkbox">
@@ -177,12 +183,15 @@
                   <input class="chk" type="checkbox" >
                   <span class="checkmark"></span>
                 </label> 
-                <p class="indent-2"><span class="h6">Additional information </span>(Optional)</p>   
+                <p class="indent-2"><span class="h6">Additional information </span><span class="qo">(Optional)</span></p>
                 <label class="block" for="other-info">Please provide further information and/or attach relevant documentation to support your selected option</label>
                 <textarea class="block" name="other-info"></textarea>
                 <div class="indent-1">
-                    <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile"><br><br>
+                    <label for="myfile">Upload Documents:</label>
+                    <input id="uploadFile3" class="file-upload" type="file" name="myfile">
+                    <button id="uploadBtn3" class="file-upload-btn" type="button">Browse</button>
+                    <span id="uploadText3">No file chosen</span>
+                    <!-- <input type="file" id="myfile" name="myfile"><br><br> -->
                 </div>
               </div>                     
             </div>         
@@ -241,7 +250,7 @@
               </div>
             </div>
 
-            <div class="survey-btn flex-container">
+            <div class="survey-btn flex-container align-center">
               <div><a href="./">BACK TO DASHBOARD</a></div>
               <div><a onclick="clearCheckbox()">CLEAR</a></div>
               <div><a href="" onclick="save()">SAVE</a></div>         
