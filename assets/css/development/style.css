@@ -1737,11 +1737,7 @@ video::-webkit-media-text-track-display {
   background: none;
 }
 
-/*
-** staging site: $path: '/roche';
-** localhost & live: $path: '';
-*/
-/*
+
 ** COLORS
 */
 @keyframes moveDown {
@@ -2230,7 +2226,7 @@ div.card-image.last > *:not(:last-of-type) {
   display: none !important;
 }
 
-header.roche-header {
+/*header.roche-header {
   background-image: url("/assets/media/image/bc-header-desktop.png");
 }
 @media (max-width: 75em) {
@@ -2255,7 +2251,7 @@ header.her2-header {
     background-image: url("/assets/media/image/her2-header-mobile.png");
     background-position: top;
   }
-}
+}*/
 @media (max-width: 37.5em) {
   header.her2-header .title-box {
     top: 65%;
@@ -3369,7 +3365,7 @@ mark,
   margin-left: -15px;
 }
 
-.footer-roche-disclaimer .row{
+.footer-sgenable-disclaimer .row{
   padding-bottom: 30px;
 }
 
@@ -4974,7 +4970,7 @@ header {
 }
 
 /* Footer */
-.footer-roche-disclaimer img{
+.footer-sgenable-disclaimer img{
   width: 64% !important;
   margin-left: 54px  !important;
 }
@@ -5028,7 +5024,7 @@ header {
   position: relative;
   top: 0px;
 }
-.footer-roche-copyright{
+.footer-sgenable-copyright{
   margin-top:34px !important;
 }
 

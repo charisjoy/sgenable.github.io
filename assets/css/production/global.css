@@ -70,27 +70,8 @@
   }
 }
 
-/* 
-** her2 COLORS
-*/
-
 /* disclaimer */
-.footer-her2-disclaimer {
-  background-color: #d8d1db;
-}
-
-/* copyright */
-.footer-her2-copyright {
-  background-color: #994789;
-  color: #fff;
-}
-
-/* 
-** roche COLORS
-*/
-
-/* disclaimer */
-.footer-roche-disclaimer {
+.footer-sgenable-disclaimer {
   background-color: #0066cc;
   color: #ffff;
   padding-top: 30px;
@@ -98,12 +79,12 @@
   
 }
 
-.footer-roche-disclaimer img {
+.footer-sgenable-disclaimer img {
   width: 35%;
   margin-left: 222px;
   
 }
-.footer-roche-disclaimer input[type=submit] {
+.footer-sgenable-disclaimer input[type=submit] {
   height: 40px;
   border-radius: 15px;
   font-size: 16px;
@@ -113,17 +94,17 @@
   width: 25%;
 }
 
-.footer-roche-disclaimer input[type=email] {
+.footer-sgenable-disclaimer input[type=email] {
   width:46%;
 }
 
-.footer-roche-disclaimer input{
+.footer-sgenable-disclaimer input{
   height: 40px;
   border-radius: 9px;
 }
 
 /* copyright */
-.footer-roche-copyright {
+.footer-sgenable-copyright {
   background-color: #0066cc;
 }
 
