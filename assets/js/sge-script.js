@@ -212,6 +212,7 @@ function showMobileMenu(x){
     btnlogin.setAttribute('style','display:block !important');
     var mobilesurvey = document.getElementById('mobile-survey');
     mobilesurvey.setAttribute('style','display:block !important');
+    document.getElementById('body-content').className = 'mb-body';
     mobButton = 1;
   }else{
     var carousel = document.getElementById("carouselExampleCaptions12");
@@ -224,6 +225,7 @@ function showMobileMenu(x){
     btnlogin.setAttribute('style','display:none !important');
     var mobilesurvey = document.getElementById('mobile-survey');
     mobilesurvey.setAttribute('style','display:none !important');
+    document.getElementById('body-content').className = '';
     mobButton = 0;
   }
 }

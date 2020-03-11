@@ -35,6 +35,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+#bc{
+  margin-bottom: -248px;
+}
 body p{
   font-family: Avenir Book;
   font-size:20px;
@@ -2585,10 +2588,6 @@ header {
   border: 0;
   padding: 0;
 }
-.simple-sticky > a:last-child:hover {
-  color: #c769a0;
-  border-bottom: 1px solid #c769a0;
-}
 .simple-sticky img {
   width: 4.6875rem;
   margin-right: 1.875rem;
@@ -3145,13 +3144,25 @@ header {
 /* Extra small devices (phones, 600px and down) */
 
 @media 
-(max-width: 37.5em){
+(max-width: 56.25em){
+      body{
+        width: 100vw;
+      }
+      .mb-body{
+        background-color: blue;
+      }
+      #bc{
+        background-color: white;
+        margin-bottom: -301px;
+      }
       .simple-sticky.sticky{
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-      } 
-      .topnav > a:first-child {
-            margin-left: -36px !important;
+      }
+      #global-sticky-menu{
+        width:100vw;
+        padding-left: 9px;
+        padding-right: 9px;
       }
       .topnav .topnav-right a:not(:last-child){display: none;}
       .topnav .topnav-right .button{display: none;}
@@ -3159,7 +3170,7 @@ header {
       .topnav .icon{
         display: block;
         top: -39px;
-        right: -47px;
+        margin-left: auto;
       }
       .nav-mobile-show{
         position: absolute;
@@ -3185,7 +3196,8 @@ header {
       }
       .topnav-right {
         position: relative !important;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: 65px;
         top: 1rem;
       }  
       .topnav i{
@@ -3209,14 +3221,16 @@ header {
         background-color: #0b0b6d;
         border-radius: 50%;
         width: 41rem;
-        display: flex;
-        align-items: center;
       }
       .button-login{
         background-color: #00a79d;
       }
       .green-circle-menu{
         right: -14rem;
+      }
+      #mb-survey-vp{
+        height: 100vh;
+        width: 100vw;
       }
       #mobile-survey{
         position: relative;
@@ -3236,16 +3250,8 @@ header {
 }
 
 @media (max-width: 56.25em) {
-  .topnav .icon {
-      display: block;
-      top: -39px;
-      right: -97px;
-  }
   .accessibility-sticky {
-      left: 358px;
-  }
-  .nav-mobile-show-bg-click {
-    right: 1rem;
+      left: 321px;
   }
 }
 
