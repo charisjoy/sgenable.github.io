@@ -2277,6 +2277,10 @@ mark,
   display: block;
 }
 
+#carouselExampleCaptions12{
+  width: 100vw;
+}
+
 .carousel {
   position: relative;
 }
@@ -3134,10 +3138,10 @@ header {
 .topnav .icon {
   display: none;
 }
-.nav-mobile-show-bg{
-  display: none;
+#mb-survey-vp{
+  display:none;
 }
-#mobile-survey{
+#nav-mobile-wrapper{
   display:none;
 }
 
@@ -3148,12 +3152,8 @@ header {
       body{
         width: 100vw;
       }
-      .mb-body{
+      #mb-survey-vp{
         background-color: blue;
-      }
-      #bc{
-        background-color: white;
-        margin-bottom: -301px;
       }
       .simple-sticky.sticky{
         -webkit-backface-visibility: hidden;
@@ -3172,13 +3172,13 @@ header {
         top: -39px;
         margin-left: auto;
       }
-      .nav-mobile-show{
-        position: absolute;
-        top: 72px;
+      #nav-mobile{
+        position: relative;
+        top: 150px;
         width: 13rem;
-        right: -10rem;
+        right: -5rem;
       }
-      .nav-mobile-show a{
+      #nav-mobile a{
         display: block !important;
         color: white;
         text-align: left;
@@ -3186,7 +3186,7 @@ header {
         font-size: 16px;
         font-family: Avenir Medium;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
       }
       .topnav .icon a{
         top: 0;
@@ -3210,19 +3210,17 @@ header {
         position: relative;
         margin: 0;
       }
-
-      .nav-mobile-show-bg-click{
-        display: block;
+      #nav-mobile-wrapper{
         position: fixed;
-        top: 0rem;
-        right: -4rem;
-        height: 34rem;
+        top: 0;
+        left: 7rem;
+        height: 89vh;
         left: 0re;
         background-color: #0b0b6d;
         border-radius: 50%;
-        width: 41rem;
+        width: 200vw;
       }
-      .button-login{
+      #mb-btn-login{
         background-color: #00a79d;
       }
       .green-circle-menu{
@@ -3253,91 +3251,4 @@ header {
   .accessibility-sticky {
       left: 321px;
   }
-}
-
-@media only screen 
-and (min-width: 601px)
-and (max-width: 992px) {
-    #carouselExampleCaptions12{
-      width: 248vh;
-    }
-    .topnav > a:first-child {
-          margin-left: -36px !important;
-          margin-right: 60%;
-    }
-    .topnav .topnav-right a:not(:last-child){display: none;}
-    .topnav .topnav-right .button{display: none;}
-    .link-background{display: none;}
-    .topnav .icon{
-      display: block;
-      top: -11px;
-      left: -40px;
-    }
-    .nav-mobile-show{
-      position: absolute;
-      right: 0;
-      top: 71px;
-      width: 13rem;
-      margin-right: 17px;
-    }
-    .nav-mobile-show a{
-      display: block !important;
-      color: white;
-      text-align: left;
-      text-decoration: none;
-      font-size: 16px;
-      font-family: Avenir Medium;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-    .topnav .icon a{
-      top: 0;
-    }
-    .topnav a{
-      padding: 0px;
-    }
-    .topnav-right {
-      position: relative !important;
-      right: 0rem !important;
-      top: 1rem;
-    }  
-    .topnav i{
-      font-size: 50px;
-    }
-
-    .nav-mobile-show-bg-click{
-      display: block;
-      position: fixed;
-      top: 0rem;
-      right: -20rem;
-      height: 34rem;
-      left: 0re;
-      background-color: #0b0b6d;
-      border-radius: 50%;
-      width: 41rem;
-      display: flex;
-      align-items: center;
-    }
-    .button-login{
-      background-color: #00a79d;
-    }
-    .green-circle-menu{
-      right: -14rem;
-    }
-    .mobile-survey{
-      position: relative;
-      top: 108px;
-      right: 202px;
-      background-color: #95c83d;
-      border-radius: 50%;
-      width: 22rem;
-      height: 16rem;
-      padding: 105px 0 40px 253px;
-      font-size: 16px;
-      font-weight: bold;
-      font-family: Avenir Medium;
-      color: #0056b8;
-      margin-bottom: 26rem;
-    }
-
 }

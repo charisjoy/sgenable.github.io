@@ -204,28 +204,22 @@ function showMobileMenu(x){
   if(mobButton == 0){
     var carousel = document.getElementById("carouselExampleCaptions12");
     carousel.setAttribute( 'style', 'display:none');
-    document.getElementById("nav-mobile").className  = 'nav-mobile-show';
-    document.getElementById("nav-mobile-show-bg").className  = 'nav-mobile-show-bg-click';
-    var survey = document.getElementById('nav-left-mobile');
-    survey.setAttribute('style','display:none !important');
-    var btnlogin = document.getElementById('btn-login');
+    var mbNav = document.getElementById('nav-mobile-wrapper');
+    mbNav.setAttribute('style','display:block');
+    var btnlogin = document.getElementById('mb-btn-login');
     btnlogin.setAttribute('style','display:block !important');
-    var mobilesurvey = document.getElementById('mobile-survey');
+    var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:block !important');
-    document.getElementById('body-content').className = 'mb-body';
     mobButton = 1;
   }else{
     var carousel = document.getElementById("carouselExampleCaptions12");
     carousel.setAttribute( 'style', 'display:block');
-    document.getElementById("nav-mobile").className  ='nav-mobile-show-bg';
-    document.getElementById("nav-mobile-show-bg").className  = 'nav-mobile-show-bg';
-    var survey = document.getElementById('nav-left-mobile');
-    survey.setAttribute('style','display:block !important');
-    var btnlogin = document.getElementById('btn-login');
+    var mbNav = document.getElementById('nav-mobile-wrapper');
+    mbNav.setAttribute('style','display:none');
+    var btnlogin = document.getElementById('mb-btn-login');
     btnlogin.setAttribute('style','display:none !important');
-    var mobilesurvey = document.getElementById('mobile-survey');
+    var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:none !important');
-    document.getElementById('body-content').className = '';
     mobButton = 0;
   }
 }
