@@ -3171,13 +3171,7 @@ header {
         display: block;
         top: -39px;
         margin-left: auto;
-      }
-      #nav-mobile{
-        position: relative;
-        top: 220px;
-        width: 13rem;
-        right: -5rem;
-      }
+      }  
       #nav-mobile a{
         display: block !important;
         color: white;
@@ -3215,10 +3209,10 @@ header {
         top: 0;
         left: 7rem;
         height: 89vh;
-        left: 0re;
         background-color: #0b0b6d;
         border-radius: 50%;
         width: 200vw;
+        padding: 230px 63px 0 63px;
       }
       #mb-btn-login{
         background-color: #00a79d;
