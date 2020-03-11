@@ -33,22 +33,32 @@
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
 <body id="body-content">
+
     <!-- Main Header --> 
     <div id="global-sticky-menu" class="topnav simple-sticky sticky">
       <a class="active" href="./">
         <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
       </a>
       <div class="link-background" onmouseover="hoverIn();" onmouseout="hoverOut()"></div>
-      <div id="topnav-link" class="topnav-right">
+      <div id="topnav-link" class="topnav-right">     
+        <div id="nav-mobile"> 
         <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
         <a class="tablinks" href="registration.html">HOW TO APPLY</a>
         <a class="tablinks" href="#about">HONOUR ROLL</a>
         <a class="tablinks" href="#about">FAQs</a>
-        <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
-        <button id="btn-login" class="button button-login">LOGIN</button>
-      </div>
+        <a id="nav-left-mobile" class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
+        <button id="btn-login" class="button button-login">LOGIN</button> 
+        </div>
+        <a class="icon">
+          <i onclick="showMobileMenu(this)" class="fa fa-bars"></i>
+        </a>                 
+      </div>   
     </div>
-
+  
+    <div id="nav-mobile-show-bg" class="nav-mobile-show-bg"></div>
+    <div id="mobile-survey"> 
+      <a id="nav-left-mobile" href="survey.html">TAKE SURVEY</a>
+    </div> 
     <div id="carouselExampleCaptions12" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -124,23 +134,24 @@
       <a class="carousel-control-next slides-switcher" href="#carouselExampleCaptions12" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
-      
-      <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
-        <div class="green-circle-menu-control">
-          <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
-        </div>
-          <div class="green-circle-menu-content">
-            <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
-            <div><a class="label">CONTRAST<a></a></div>
-            <div><a class="accessibility-small">A-<a></a></div>
-            <div><a class="accessibility-normal">A<a></a></div>
-            <div><a class="accessibility-large">A+<a></a></div>
-            <div><a class="label">TEXT SIZE<p></p></div>
-            <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
-          </div>    
-      </div>
-    </div>   
+      </a>     
+    </div>  
+  </div>   
+
+  <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
+    <div class="green-circle-menu-control">
+      <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
+    </div>
+      <div class="green-circle-menu-content">
+        <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
+        <div><a class="label">CONTRAST<a></a></div>
+        <div><a class="accessibility-small">A-<a></a></div>
+        <div><a class="accessibility-normal">A<a></a></div>
+        <div><a class="accessibility-large">A+<a></a></div>
+        <div><a class="label">TEXT SIZE<p></p></div>
+        <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
+      </div>    
+  </div>  
 
   <!-- Main Content -->
   <main id="bc">

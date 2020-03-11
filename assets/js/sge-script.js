@@ -197,3 +197,33 @@ function validateForm() {
     return false;
   }
 }
+var mobButton = 0;
+
+function showMobileMenu(x){
+  x.classList.toggle("fa-thumbs-times");
+  if(mobButton == 0){
+    var carousel = document.getElementById("carouselExampleCaptions12");
+    carousel.setAttribute( 'style', 'display:none');
+    document.getElementById("nav-mobile").className  = 'nav-mobile-show';
+    document.getElementById("nav-mobile-show-bg").className  = 'nav-mobile-show-bg-click';
+    var survey = document.getElementById('nav-left-mobile');
+    survey.setAttribute('style','display:none !important');
+    var btnlogin = document.getElementById('btn-login');
+    btnlogin.setAttribute('style','display:block !important');
+    var mobilesurvey = document.getElementById('mobile-survey');
+    mobilesurvey.setAttribute('style','display:block !important');
+    mobButton = 1;
+  }else{
+    var carousel = document.getElementById("carouselExampleCaptions12");
+    carousel.setAttribute( 'style', 'display:block');
+    document.getElementById("nav-mobile").className  ='nav-mobile-show-bg';
+    document.getElementById("nav-mobile-show-bg").className  = 'nav-mobile-show-bg';
+    var survey = document.getElementById('nav-left-mobile');
+    survey.setAttribute('style','display:block !important');
+    var btnlogin = document.getElementById('btn-login');
+    btnlogin.setAttribute('style','display:none !important');
+    var mobilesurvey = document.getElementById('mobile-survey');
+    mobilesurvey.setAttribute('style','display:none !important');
+    mobButton = 0;
+  }
+}
