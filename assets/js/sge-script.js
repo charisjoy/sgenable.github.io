@@ -210,12 +210,9 @@ function validateForm() {
 }
 var mobButton = 0;
 
-function showMobileMenu(x){
+function showMobileMenu(){
 
-  x.classList.toggle("fa-times");
   
-  return;
-
   if(mobButton == 0){
     var carousel = document.getElementById("carouselExampleCaptions12");
     carousel.setAttribute( 'style', 'display:none');
@@ -225,6 +222,7 @@ function showMobileMenu(x){
     btnlogin.setAttribute('style','display:block !important');
     var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:block !important');
+    document.getElementById('hmbrger').className = 'fa fa-times';
     mobButton = 1;
   }else{
     var carousel = document.getElementById("carouselExampleCaptions12");
@@ -235,6 +233,7 @@ function showMobileMenu(x){
     btnlogin.setAttribute('style','display:none !important');
     var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:none !important');
+    document.getElementById('hmbrger').className = 'fa fa-bars';
     mobButton = 0;
   }
   var x = document.getElementById("green-circle-menu");
