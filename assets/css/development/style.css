@@ -2567,6 +2567,8 @@ header {
   display: inline-block;
   font-size: 16px;
   border-radius: 18px;
+  letter-spacing: 0.20em;
+  white-space: nowrap;
 }
 .button-login{
   background-color: #033d80;
@@ -3228,7 +3230,7 @@ header {
         background-color: #00a79d;
       }
       .green-circle-menu{
-        right: 12rem;
+        right: 13rem;
       }
       #mb-survey-vp{
         height: 100vh;

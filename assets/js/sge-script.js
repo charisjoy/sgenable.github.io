@@ -3,11 +3,11 @@ function gcmControl(){
   var m = window.matchMedia("(max-width: 56.25em)");
   if(m){
     var x = document.getElementById("green-circle-menu");
-    if (x.style.right == "4rem") {
-      x.style.right = "12rem";
+    if (x.style.right == "7rem") {
+      x.style.right = "13rem";
       document.querySelector('.right').style.transform  = "rotate(-45deg)";
     } else {
-      x.style.right = "4rem";
+      x.style.right = "7rem";
       document.querySelector('.right').style.transform  = "rotate(135deg)";
     }
   }else{
@@ -234,11 +234,11 @@ function showMobileMenu(x){
     mobButton = 0;
   }
   var x = document.getElementById("green-circle-menu");
-  if (x.style.right == "4rem") {
-    x.style.right = "12rem";
+  if (x.style.right == "7rem") {
+    x.style.right = "13rem";
     document.querySelector('.right').style.transform  = "rotate(-45deg)";
   } else {
-    x.style.right = "4rem";
+    x.style.right = "7rem";
     document.querySelector('.right').style.transform  = "rotate(135deg)";
   }
 }
