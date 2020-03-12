@@ -3160,9 +3160,14 @@ header {
   display:none;
 }
 
-
 @media 
 (max-width: 56.25em){
+      .media-2{
+        display: none;
+      }
+      #hmbrger2{
+        display: none;
+      }
       body{
         width: 100vw;
       }
@@ -3301,6 +3306,9 @@ header {
           border-width: 0 3px 3px 0;
           padding: 2px;
       }
+      .accessibility-sticky{
+        top: 219px;
+      }
   
 }
 
@@ -3308,6 +3316,21 @@ header {
 (max-width: 24.5em){
   .green-circle-menu{
     right: -10rem;
+  }
+  .media-1{
+    display: none;
+  }
+  .media-2{
+    display: block;
+  }
+  #hmbrger1{
+    display: none;
+  }
+  #hmbrger2{
+    display: block;
+  }
+  .accessibility-sticky{
+    top: 219px;
   }
 }  
 

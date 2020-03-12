@@ -1,10 +1,6 @@
 
-function gcmControl(){
+function gcmControl1(){
 
-  const m = window.matchMedia("(max-width: 56.25em)");
-  const a = window.matchMedia("(max-width: 75em)");
-
-  if(m.matches){
 
     var x = document.getElementById("green-circle-menu");
     if (x.style.right == "7rem") {
@@ -14,28 +10,22 @@ function gcmControl(){
       x.style.right = "7rem";
       document.querySelector('.right').style.transform  = "rotate(135deg)";
     }
-  } else if (a.matches) {
+  
+}
+
+function gcmControl2(){
+
     var x = document.getElementById("green-circle-menu");
-    if (x.style.right == "13rem") {
+    if (x.style.right == "-17rem") {
       x.style.right = "-10rem";
       document.querySelector('.right').style.transform  = "rotate(-45deg)";
     } else {
-      x.style.right = "-13rem";
+      x.style.right = "-17rem";
       document.querySelector('.right').style.transform  = "rotate(135deg)";
     }
-
-  }else{
-    var x = document.getElementById("green-circle-menu");
-    if (x.style.right == "-16rem") {
-      x.style.right = "-9rem";
-      document.querySelector('.right').style.transform  = "rotate(-45deg)";
-    } else {
-      x.style.right = "-16rem";
-      document.querySelector('.right').style.transform  = "rotate(135deg)";
-    }
-  }
-
+ 
 }
+
 
 function hoverIn(){
   var bg = document.getElementsByClassName("link-background");
@@ -225,9 +215,8 @@ function validateForm() {
 }
 var mobButton = 0;
 
-function showMobileMenu(){
-
-  
+function showMobileMenu1(){
+ 
   if(mobButton == 0){
     var carousel = document.getElementById("carouselExampleCaptions12");
     carousel.setAttribute( 'style', 'display:none');
@@ -237,7 +226,7 @@ function showMobileMenu(){
     btnlogin.setAttribute('style','display:block !important');
     var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:block !important');
-    document.getElementById('hmbrger').className = 'fa fa-times';
+    document.getElementById('hmbrger1').className = 'fa fa-times';
     mobButton = 1;
   }else{
     var carousel = document.getElementById("carouselExampleCaptions12");
@@ -248,7 +237,7 @@ function showMobileMenu(){
     btnlogin.setAttribute('style','display:none !important');
     var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:none !important');
-    document.getElementById('hmbrger').className = 'fa fa-bars';
+    document.getElementById('hmbrger1').className = 'fa fa-bars';
     mobButton = 0;
   }
   var x = document.getElementById("green-circle-menu");
@@ -257,6 +246,41 @@ function showMobileMenu(){
     document.querySelector('.right').style.transform  = "rotate(-45deg)";
   } else {
     x.style.right = "7rem";
+    document.querySelector('.right').style.transform  = "rotate(135deg)";
+  }
+}
+
+function showMobileMenu2(){
+ 
+  if(mobButton == 0){
+    var carousel = document.getElementById("carouselExampleCaptions12");
+    carousel.setAttribute( 'style', 'display:none');
+    var mbNav = document.getElementById('nav-mobile-wrapper');
+    mbNav.setAttribute('style','display:block');
+    var btnlogin = document.getElementById('mb-btn-login');
+    btnlogin.setAttribute('style','display:block !important');
+    var mobilesurvey = document.getElementById('mb-survey-vp');
+    mobilesurvey.setAttribute('style','display:block !important');
+    document.getElementById('hmbrger2').className = 'fa fa-times';
+    mobButton = 1;
+  }else{
+    var carousel = document.getElementById("carouselExampleCaptions12");
+    carousel.setAttribute( 'style', 'display:block');
+    var mbNav = document.getElementById('nav-mobile-wrapper');
+    mbNav.setAttribute('style','display:none');
+    var btnlogin = document.getElementById('mb-btn-login');
+    btnlogin.setAttribute('style','display:none !important');
+    var mobilesurvey = document.getElementById('mb-survey-vp');
+    mobilesurvey.setAttribute('style','display:none !important');
+    document.getElementById('hmbrger2').className = 'fa fa-bars';
+    mobButton = 0;
+  }
+  var x = document.getElementById("green-circle-menu");
+  if (x.style.right == "-17rem") {
+    x.style.right = "-10rem";
+    document.querySelector('.right').style.transform  = "rotate(-45deg)";
+  } else {
+    x.style.right = "-17rem";
     document.querySelector('.right').style.transform  = "rotate(135deg)";
   }
 }
