@@ -5238,8 +5238,18 @@ header {
     margin: 38px;
     border-radius: 20px;
     z-index: -1;
+    animation: slide-right 1s ease;
 }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
 .information-shadow-cont-3{
   width: 515%;
   height: 108%;
