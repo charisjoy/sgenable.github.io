@@ -1,14 +1,25 @@
 
 function gcmControl(){
-  var x = document.getElementById("green-circle-menu");
-  if (x.style.right == "-16rem") {
-    x.style.right = "-9rem";
-    document.querySelector('.right').style.transform  = "rotate(-45deg)";
-  } else {
-    x.style.right = "-16rem";
-    document.querySelector('.right').style.transform  = "rotate(135deg)";
+  var m = window.matchMedia("(max-width: 56.25em)");
+  if(m){
+    var x = document.getElementById("green-circle-menu");
+    if (x.style.right == "4rem") {
+      x.style.right = "12rem";
+      document.querySelector('.right').style.transform  = "rotate(-45deg)";
+    } else {
+      x.style.right = "4rem";
+      document.querySelector('.right').style.transform  = "rotate(135deg)";
+    }
+  }else{
+    var x = document.getElementById("green-circle-menu");
+    if (x.style.right == "-16rem") {
+      x.style.right = "-9rem";
+      document.querySelector('.right').style.transform  = "rotate(-45deg)";
+    } else {
+      x.style.right = "-16rem";
+      document.querySelector('.right').style.transform  = "rotate(135deg)";
+    }
   }
-  
 }
 
 function hoverIn(){
@@ -221,5 +232,13 @@ function showMobileMenu(x){
     var mobilesurvey = document.getElementById('mb-survey-vp');
     mobilesurvey.setAttribute('style','display:none !important');
     mobButton = 0;
+  }
+  var x = document.getElementById("green-circle-menu");
+  if (x.style.right == "4rem") {
+    x.style.right = "12rem";
+    document.querySelector('.right').style.transform  = "rotate(-45deg)";
+  } else {
+    x.style.right = "4rem";
+    document.querySelector('.right').style.transform  = "rotate(135deg)";
   }
 }

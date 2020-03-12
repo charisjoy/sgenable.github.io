@@ -3210,9 +3210,6 @@ header {
       .topnav i{
         font-size: 50px;
       }
-      .accessibility-sticky{
-        left:320px;
-      }
       .accessibility-sticky i{
         position: relative;
         margin: 0;
@@ -3231,7 +3228,7 @@ header {
         background-color: #00a79d;
       }
       .green-circle-menu{
-        right: -14rem;
+        right: 12rem;
       }
       #mb-survey-vp{
         height: 100vh;
@@ -3277,13 +3274,11 @@ header {
       #carouselExampleCaptions12 .carousel-inner div:first-child{
         height: 51vh;
       }
+      .green-circle-menu-content {
+          left: -2rem;
+      }
 }
 
-@media (max-width: 56.25em) {
-  .accessibility-sticky {
-      left: 321px;
-  }
-}
 .file-upload {
   display: none;
 }
