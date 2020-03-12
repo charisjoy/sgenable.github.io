@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>SGE: Honour Roll</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+  <!-- Development -->
+  <link rel="stylesheet" href="assets/css/development/style.css">
+
+  <!-- Production -->
+  <!-- <link rel="stylesheet" href="assets/css/production/style.min.css"> -->
+
+  <link rel="stylesheet" href="assets/css/production/global.css">
+</head>
+<body id="body-content">
+    <!-- Main Header --> 
+    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
+      <a class="active" href="./">
+        <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
+      </a>
+      <div class="link-background" onmouseover="hoverIn();" onmouseout="hoverOut()"></div>
+      <div id="topnav-link" class="topnav-right">
+        <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
+        <a class="tablinks" href="registration.html">HOW TO APPLY</a>
+        <a class="tablinks" href="honourroll.html">HONOUR ROLL</a>
+        <a class="tablinks" href="#about">FAQs</a>
+        <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
+        <button id="btn-login" class="button button-login">LOGIN</button>
+      </div>
+    </div>
+
+  <!-- Main Content -->
+  <main></main>
+
+  <!-- Footer & Disclaimer -->
+  <footer id="footer" class="main-footer footer-sgenable-disclaimer">
+    <div class="container footer-top">
+      <div class="col-md-6 col-lg-4">
+        <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
+      </div>
+      <div>
+        <div class="form-group">
+          <p>Sign up for our mailing list</p>
+          <div class="sign-up-from">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="eMail address">
+            <input id="btn-submit" id="submit" class="button" type="submit" value="SUBMIT">
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <p>Connect with us</p>
+        <div class="social-icon">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+  </div>
+    <div id="footer-copyright" class="copyright footer-sgenable-copyright">
+      <div class="footer-content container">
+        <div>&copy; 2020 SG Enable. All Rights Reserved.</div>
+        <div class="footer-links">
+          <a href="#" class="privacy-link">Privacy Policy</a>
+          <a href="#" class="privacy-link">Terms of Use</a>
+          <a href="#" class="privacy-link">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="assets/js/sge-script.js"></script>
+  <!--script src="pwa.js"></script-->
+
+
+</body>
+</html>
