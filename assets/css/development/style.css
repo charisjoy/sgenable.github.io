@@ -3307,7 +3307,7 @@ header {
 @media 
 (max-width: 24.5em){
   .green-circle-menu{
-    right: 13rem;
+    right: -10rem;
   }
 }  
 
