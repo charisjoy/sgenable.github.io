@@ -2864,7 +2864,7 @@ header {
 }
 .information-shadow-process{
     position: absolute;
-    top: -65px;
+    top: -308px;
     left: 87px;
     width: 162%;
     height: 114%;
@@ -2873,11 +2873,14 @@ header {
     border-radius: 20px;
     z-index: -1;
 }
+#information-content-3{
+  margin-top: 5rem;
+}
 .information-shadow-cont-3{
   width: 515%;
   height: 108%;
   position: relative;
-  top: -258px;
+  top: -304px;
   background-color: #e5eef5;
   margin: 38px;
   border-radius: 20px;
@@ -3248,6 +3251,24 @@ header {
         font-family: Avenir Medium;
         color: #0056b8;
         margin-bottom: 26rem;
+      }
+      #information-content-2 .flex-container {
+          margin-left: 1rem;
+      }
+      .information-content-right {
+          margin-left: 1rem;
+      }
+      .information-border-left-green {
+        width: 7rem;
+      }  
+      .information-border-left-blue {
+          width: 7rem;
+      }
+      #Information h1{
+        color: #0056b8;
+      }
+      #information-content-3 .flex-container{
+        flex-direction: column-reverse;
       }
 }
 
