@@ -1871,7 +1871,7 @@ p, .tab-sub-text, .text-box-onscroll, li {
 }
 
 .button-learn-more {
-  background-color:#009999 ;
+  background-color:#009d92 !important;
   color: #ffff !important;
   margin-top: 0.625rem;
   cursor: pointer;
@@ -2896,6 +2896,7 @@ h3{
   font-family: 'Oduda Semi Bold';
   font-size: 18px;
 }
+
 h6,.h6{
   font-family: 'Oduda Semi Bold';
   font-size: 23px;
@@ -5205,7 +5206,9 @@ header {
   margin: 38px;
   border-radius: 20px;
   z-index: -1;
+  animation: slide-right 1s ease;
 }
+
 .information-shadow-left{
     position: absolute;
     top: -68px;
@@ -5217,15 +5220,6 @@ header {
     border-radius: 20px;
     z-index: -1;
     animation: slide-left 1s ease;
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .information-shadow-process{
@@ -5241,15 +5235,6 @@ header {
     animation: slide-right 1s ease;
 }
 
-@keyframes slide-right {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .information-shadow-cont-3{
   width: 515%;
   height: 108%;
@@ -5260,6 +5245,25 @@ header {
   border-radius: 20px;
   z-index: -1;
 }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .space-top-6{
   margin-top:6rem;
 }
@@ -5568,4 +5572,24 @@ header {
   margin: 0;
   font-size: 20px;
   font-style: italic;
+}
+
+.left-image h2, .left-image h3,
+.right-image h2, .right-image h3 {
+  font-family: 'Oduda Semi Bold';
+  
+}
+
+.left-image h2,
+.right-image h2 {
+  font-size: 2.18rem;
+  color: #464646;
+}
+
+.left-image h3,
+.right-image h3 {
+  font-size: 1.25rem;
+  letter-spacing: 10px;
+  color: #555555;
+  margin-bottom: 1rem;
 }
