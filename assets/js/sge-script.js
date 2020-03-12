@@ -211,7 +211,10 @@ function validateForm() {
 var mobButton = 0;
 
 function showMobileMenu(x){
+
   x.classList.toggle("fa-times");
+  return;
+  
   if(mobButton == 0){
     var carousel = document.getElementById("carouselExampleCaptions12");
     carousel.setAttribute( 'style', 'display:none');
