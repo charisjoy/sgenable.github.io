@@ -1,7 +1,11 @@
 
 function gcmControl(){
-  var m = window.matchMedia("(max-width: 56.25em)");
-  if(m){
+
+  const m = window.matchMedia("(max-width: 56.25em)");
+  const a = window.matchMedia("(max-width: 75em)");
+
+  if(m.matches){
+
     var x = document.getElementById("green-circle-menu");
     if (x.style.right == "7rem") {
       x.style.right = "13rem";
@@ -10,6 +14,16 @@ function gcmControl(){
       x.style.right = "7rem";
       document.querySelector('.right').style.transform  = "rotate(135deg)";
     }
+  } else if (a.matches) {
+    var x = document.getElementById("green-circle-menu");
+    if (x.style.right == "13rem") {
+      x.style.right = "-10rem";
+      document.querySelector('.right').style.transform  = "rotate(-45deg)";
+    } else {
+      x.style.right = "-13rem";
+      document.querySelector('.right').style.transform  = "rotate(135deg)";
+    }
+
   }else{
     var x = document.getElementById("green-circle-menu");
     if (x.style.right == "-16rem") {
@@ -20,6 +34,7 @@ function gcmControl(){
       document.querySelector('.right').style.transform  = "rotate(135deg)";
     }
   }
+
 }
 
 function hoverIn(){

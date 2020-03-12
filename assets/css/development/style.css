@@ -2547,7 +2547,7 @@ header {
 }
 .link-background{
   position: absolute;
-  right: 150px;
+  right: 163px;
   height: 138px;
   width: 128px;
   background-color: #95c83d;
@@ -3160,8 +3160,297 @@ header {
   display:none;
 }
 
-/* Extra small devices (phones, 600px and down) */
+@media 
+only screen and
+(min-width: 24.5em) and
+(max-width: 56.25em){
+  
+  body{
+    width: 100vw;
+  }
+  #mb-survey-vp{
+    background-color: blue;
+  }
+  .simple-sticky.sticky{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #global-sticky-menu{
+    width:100vw;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .topnav .topnav-right a:not(:last-child){display: none;}
+  .topnav .topnav-right .button{display: none;}
+  .link-background{display: none;}
+  .topnav .icon{
+    display: block;
+    top: -39px;
+    margin-left: auto;
+  }  
+  #nav-mobile a{
+    display: block !important;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Avenir Medium;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .topnav .icon a{
+    top: 0;
+  }
+  .topnav a{
+    padding: 0px;
+  }
+  .topnav-right {
+    position: relative !important;
+    margin-left: auto;
+    margin-right: 65px;
+    top: 1rem;
+  }  
+  .topnav i{
+    font-size: 50px;
+  }
+  .accessibility-sticky i{
+    position: relative;
+    margin: 0;
+  }
+  #nav-mobile-wrapper{
+    position: fixed;
+    top: 0;
+    left: 7rem;
+    height: 89vh;
+    background-color: #0b0b6d;
+    border-radius: 50%;
+    width: 200vw;
+    padding: 230px 63px 0 63px;
+  }
+  #mb-btn-login{
+    background-color: #00a79d;
+  }
+  .green-circle-menu{
+    right: 13rem;
+  }
+  #mb-survey-vp{
+    height: 100vh;
+    width: 100vw;
+  }
+  #mobile-survey{
+    position: relative;
+    top: 84px;
+    right: 250px;
+    background-color: #b2f147;
+    border-radius: 50%;
+    width: 22rem;
+    height: 16rem;
+    padding: 105px 0 40px 266px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Avenir Medium;
+    color: #0056b8;
+    margin-bottom: 26rem;
+  }
+  #information-content-2 .flex-container {
+      margin-left: 1rem;
+  }
+  .information-content-right {
+      margin-left: 1rem;
+  }
+  .information-border-left-green {
+    width: 7rem;
+  }  
+  .information-border-left-blue {
+      width: 7rem;
+  }
+  #Information h1{
+    color: #0056b8;
+  }
+  #information-content-3 .flex-container{
+    flex-direction: column-reverse;
+  }
+  #carouselExampleCaptions12 {
+      width: 100vw;
+      height: 49vh;
+  }
+  #carouselExampleCaptions12 .carousel-inner div:first-child{
+    height: 51vh;
+  }
+  .green-circle-menu-content {
+      left: -2rem;
+  }
+  .footer-top {
+      display: flex;
+      flex-direction: column;
+  }
+  .footer-top > div:first-child {        
+      position: absolute;
+      margin-top: -72px;
+      left: 38px;
+  }
+  .footer-top > div:nth-child(2) {
+      margin-top: 22px;
+      margin-left: 26px;
+  }
+  .footer-top > div:last-child {
+      margin-left: 7px;
+      margin-top: 22px;
+  }
+  i{
+      position: absolute;
+      margin: 6px 0px 2px -9px;
+      border-width: 0 3px 3px 0;
+      padding: 2px;
+  }
 
+}
+
+@media 
+(max-width: 24.4em){
+  
+  body{
+    width: 100vw;
+  }
+  #mb-survey-vp{
+    background-color: blue;
+  }
+  .simple-sticky.sticky{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #global-sticky-menu{
+    width:100vw;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .topnav .topnav-right a:not(:last-child){display: none;}
+  .topnav .topnav-right .button{display: none;}
+  .link-background{display: none;}
+  .topnav .icon{
+    display: block;
+    top: -39px;
+    margin-left: auto;
+  }  
+  #nav-mobile a{
+    display: block !important;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Avenir Medium;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .topnav .icon a{
+    top: 0;
+  }
+  .topnav a{
+    padding: 0px;
+  }
+  .topnav-right {
+    position: relative !important;
+    margin-left: auto;
+    margin-right: 65px;
+    top: 1rem;
+  }  
+  .topnav i{
+    font-size: 50px;
+  }
+  .accessibility-sticky i{
+    position: relative;
+    margin: 0;
+  }
+  #nav-mobile-wrapper{
+    position: fixed;
+    top: 0;
+    left: 7rem;
+    height: 89vh;
+    background-color: #0b0b6d;
+    border-radius: 50%;
+    width: 200vw;
+    padding: 230px 63px 0 63px;
+  }
+  #mb-btn-login{
+    background-color: #00a79d;
+  }
+  .green-circle-menu{
+    right: -9rem;
+  }
+  #mb-survey-vp{
+    height: 100vh;
+    width: 100vw;
+  }
+  #mobile-survey{
+    position: relative;
+    top: 84px;
+    right: 250px;
+    background-color: #b2f147;
+    border-radius: 50%;
+    width: 22rem;
+    height: 16rem;
+    padding: 105px 0 40px 266px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Avenir Medium;
+    color: #0056b8;
+    margin-bottom: 26rem;
+  }
+  #information-content-2 .flex-container {
+      margin-left: 1rem;
+  }
+  .information-content-right {
+      margin-left: 1rem;
+  }
+  .information-border-left-green {
+    width: 7rem;
+  }  
+  .information-border-left-blue {
+      width: 7rem;
+  }
+  #Information h1{
+    color: #0056b8;
+  }
+  #information-content-3 .flex-container{
+    flex-direction: column-reverse;
+  }
+  #carouselExampleCaptions12 {
+      width: 100vw;
+      height: 49vh;
+  }
+  #carouselExampleCaptions12 .carousel-inner div:first-child{
+    height: 51vh;
+  }
+  .green-circle-menu-content {
+      left: -2rem;
+  }
+  .footer-top {
+      display: flex;
+      flex-direction: column;
+  }
+  .footer-top > div:first-child {        
+      position: absolute;
+      margin-top: -72px;
+      left: 38px;
+  }
+  .footer-top > div:nth-child(2) {
+      margin-top: 22px;
+      margin-left: 26px;
+  }
+  .footer-top > div:last-child {
+      margin-left: 7px;
+      margin-top: 22px;
+  }
+  i{
+      position: absolute;
+      margin: 6px 0px 2px -9px;
+      border-width: 0 3px 3px 0;
+      padding: 2px;
+  }
+
+}
+
+/*
 @media 
 (max-width: 56.25em){
       body{
@@ -3304,7 +3593,7 @@ header {
       }
   
 }
-
+*/
 .file-upload {
   display: none;
 }
