@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Privacy Policy">
+  <meta name="description" content="Registration">
   <title>Registration</title>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/development/style.css">
   <!-- Production -->
   <link rel="stylesheet" href="assets/css/production/global.css">
@@ -20,7 +21,7 @@
     }
 
     html, body {
-      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      /*font-family: 'Raleway', Arial, Helvetica, sans-serif;*/
       font-weight: normal;
       line-height: 1.7;
       color: #333;
@@ -41,7 +42,7 @@
       left: -1500px;
       background-color: #95c83d;
       height: 8px;
-      width: 71%;
+      width: 82%;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       -webkit-animation: slide 1s forwards;
@@ -68,8 +69,8 @@
       position: absolute;
       z-index: 9;
       width: 31%;
-      height: 138px;
-      margin-top: 119px;
+      height: 152px;
+      margin-top: 129px;
     }
     .header-shadow{
       position: absolute;
@@ -155,14 +156,17 @@
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     }
-    .inline-right{
-      width: 52%;
+    #firstname{
+      width: 51%;
     }
     .salutation{
       width: 78px !important;
     }
     .form-group{
       margin-bottom: 15px;
+    }
+    .form-group label{
+      font-family:'Oduda';
     }
     @media (max-width: 1880px) {
       .form-control{
@@ -385,7 +389,7 @@
   <div class="container">
     <form class="form-horizontal" name="regForm" action="/action_page.php" onsubmit="return validateForm()">
       <div class="form-group">
-        <label class="control-label col-sm-2" for="organization">Organization:</label>
+        <label class="control-label col-sm-2" for="organization">Organisation Name:</label>
         <div class="col-sm-10 inline">
           <input required type="text" class="form-control" id="organization" name="organization">
         </div>
