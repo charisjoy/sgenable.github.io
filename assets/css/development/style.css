@@ -5216,7 +5216,18 @@ header {
     margin: 38px;
     border-radius: 20px;
     z-index: -1;
+    animation: slide-left 1s ease;
 }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .information-shadow-process{
     position: absolute;
     top: -65px;

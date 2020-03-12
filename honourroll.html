@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>SGE</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+  <!-- Development -->
+  <link rel="stylesheet" href="assets/css/development/style.css">
+
+  <!-- Production -->
+  <!-- <link rel="stylesheet" href="assets/css/production/style.min.css"> -->
+
+  <link rel="stylesheet" href="assets/css/production/global.css">
+</head>
+<body id="body-content">
+    <!-- Main Header --> 
+    <div id="global-sticky-menu" class="topnav simple-sticky sticky">
+      <a class="active" href="./">
+        <img src="assets/media/logo/enabling-mark-01.png" alt="Logo">
+      </a>
+      <div class="link-background" onmouseover="hoverIn();" onmouseout="hoverOut()"></div>
+      <div id="topnav-link" class="topnav-right">
+        <a class="tablinks" onclick="openTabContent(event, 'Information');" href="#Information">ABOUT US</a>
+        <a class="tablinks" href="registration.html">HOW TO APPLY</a>
+        <a class="tablinks" href="honourroll.html">HONOUR ROLL</a>
+        <a class="tablinks" href="#about">FAQs</a>
+        <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
+        <button id="btn-login" class="button button-login">LOGIN</button>
+      </div>
+    </div>
+
+    <div id="carouselExampleCaptions12" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="img-overlay-wrap">
+              <img class="item-img" src="assets/media/image/slider-1-desktop-image.png" alt="...">
+              <img id="item-svg-slide-1" class="item-svg" src="assets/media/image/slider-1-desktop-mask.svg" alt="...">
+            </div>
+            <div class="carousel_item_control">
+              <div>
+                <h1 class="h1-inclusive">INCLUSIVE <br>AND ENABLING</h3>
+                <h2 class="h2-enable-mark">
+                  The Enabling Mark. Find out where your organization stand.
+                </h2>
+                <button id="btn-survey-slide1" class="btn-slide">TAKE THE SURVEY</button>
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="1"></li>                  
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="img-overlay-wrap">        
+              <!--img class="item-img-slide-2" src="assets/media/image/slider-2-desktop-image.png" alt="..."-->  
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1308">
+                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+                 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                 </rdf:RDF>
+              </x:xmpmeta>                                                                                                                                       
+              <?xpacket end="w"?></metadata>
+              <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #0056b8;
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <g>
+                  <clipPath id="path-mask">
+                    <path  class="cls-1" d="M1726.7-164.529A990.828,990.828,0,0,1,1842,300.5c0,549.792-445.71,995.5-995.5,995.5S-149,850.29-149,300.5,296.7-695,846.5-695c228.332,0,438.572,77.055,606.522,206.34,0,0,184.42,130.323,273.68,324.128"/>
+                </clipPath>  
+                </g>  
+                <image clip-path="url(#path-mask)" height="100%" width="100%" xlink:href="assets/media/image/slider-2-desktop-image.png" />
+              </svg>
+
+            </div>
+            <div id="item_control-slide-2" class="carousel_item_control-slide-2">
+              <div>
+                <h1 class="h1-inclusive">LOREM IPSUM<br>DOLOR AMAN</h3>
+                <h2 class="h2-enable-mark">
+                  Nominations are now open. Lorem<br>ipsum dolor.
+                </h2>
+                <button id="btn-survey-slide2" class="btn-slide">TAKE THE SURVEY</button>
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="0"></li>
+                  <li data-target="#carouselExampleCaptions12" data-slide-to="1" class="active"></li>              
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>      
+  
+      <a class="carousel-control-prev slides-switcher" href="#carouselExampleCaptions12" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next slides-switcher" href="#carouselExampleCaptions12" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      
+      <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
+        <div class="green-circle-menu-control">
+          <p class="gcm-control"><i onclick="gcmControl();" class="arrow right"></i></p>
+        </div>
+          <div class="green-circle-menu-content">
+            <div><a class="accessibility-contrast"><i class="fa fa-eye" aria-hidden="true"></i><a></a></div>    
+            <div><a class="label">CONTRAST<a></a></div>
+            <div><a class="accessibility-small">A-<a></a></div>
+            <div><a class="accessibility-normal">A<a></a></div>
+            <div><a class="accessibility-large">A+<a></a></div>
+            <div><a class="label">TEXT SIZE<p></p></div>
+            <div><a class="label" href="#accessibility">ACCESSIBILITY</a></div>
+          </div>    
+      </div>
+    </div>   
+
+  <!-- Main Content -->
+
+  <!-- Footer & Disclaimer -->
+  <footer id="footer" class="main-footer footer-sgenable-disclaimer">
+    <div class="container footer-top">
+      <div class="col-md-6 col-lg-4">
+        <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
+      </div>
+      <div>
+        <div class="form-group">
+          <p>Sign up for our mailing list</p>
+          <div class="sign-up-from">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="eMail address">
+            <input id="btn-submit" id="submit" class="button" type="submit" value="SUBMIT">
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <p>Connect with us</p>
+        <div class="social-icon">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+  </div>
+    <div id="footer-copyright" class="copyright footer-sgenable-copyright">
+      <div class="footer-content container">
+        <div>&copy; 2020 SG Enable. All Rights Reserved.</div>
+        <div class="footer-links">
+          <a href="#" class="privacy-link">Privacy Policy</a>
+          <a href="#" class="privacy-link">Terms of Use</a>
+          <a href="#" class="privacy-link">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="assets/js/sge-script.js"></script>
+  <!--script src="pwa.js"></script-->
+
+
+</body>
+</html>
