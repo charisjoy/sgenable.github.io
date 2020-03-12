@@ -26,6 +26,18 @@ function gcmControl2(){
  
 }
 
+function gcmControl3(){
+
+  var x = document.getElementById("green-circle-menu");
+  if (x.style.right == "-17rem") {
+    x.style.right = "-9rem";
+    document.querySelector('.right').style.transform  = "rotate(-45deg)";
+  } else {
+    x.style.right = "-17rem";
+    document.querySelector('.right').style.transform  = "rotate(135deg)";
+  }
+
+}
 
 function hoverIn(){
   var bg = document.getElementsByClassName("link-background");

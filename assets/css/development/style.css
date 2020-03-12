@@ -23,7 +23,7 @@
 }
 @font-face {
   font-family: Oduda Semi Bold;
-  src: url(../fonts/oduda-semi-bold.otf);
+  src: url(../../fonts/oduda-semi-bold.otf);
 }
 
 html {
@@ -3182,14 +3182,14 @@ header {
   display:none;
 }
 
-.media-2{
+.media-2,.media-1{
   display: none;
 }
 
 
 @media 
 (max-width: 56.25em){
-      .media-2{
+      .media-2,.media-3{
         display: none;
       }
       #hmbrger2{
@@ -3344,7 +3344,7 @@ header {
   .green-circle-menu{
     right: -10rem;
   }
-  .media-1{
+  .media-1,.media-3{
     display: none;
   }
   .media-2{
