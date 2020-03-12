@@ -102,9 +102,11 @@
     .thankyou-container .back-to-home{
         font-family: 'Avenir Next Demi Bold';
         font-size: 17px;
+        font-weight: 600;
         color: #00a79d;
-        text-decoration: underline;
+        border-bottom: 2px solid #00a79d;
     }
+
     .img-shadow{
         position: absolute;
         top: 224px;
@@ -258,6 +260,36 @@
       font-size: 16px !important;
     }
 
+    .thankyou-container {
+      margin-top: 100px;
+    }
+
+    .container.flex-container img {
+      width: 350px;
+      height: 250px;
+    }
+
+    .container.flex-container .img-shadow {
+      top: 320px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .container.flex-container {
+        flex-direction: column;
+      }
+
+      .container.flex-container img {
+        width: 450px;
+        height: 350px;
+        margin: 60px 0;
+      }
+
+      .container.flex-container .img-shadow {
+        top: 440px;
+        height: 330px;
+      }
+    }
+
   </style>
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
@@ -276,6 +308,11 @@
       <a class="tablinks no-hover" onmouseover="hoverIn();" onmouseout="hoverOut()" href="survey.html">TAKE SURVEY</a>
       <button id="btn-login" class="button button-login">LOGIN</button>
     </div>
+    <a class="topnav-menu-btn" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
   </div>
 
   <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
@@ -290,7 +327,7 @@
         <div><a class="accessibility-large">A+<a></a></div>
         <div><a class="label">TEXT SIZE<p></p></div>
         <div><a class="label">ACCESSIBILITY</a></div>
-      </div>    
+      </div>
   </div>
 
   <div class="thankyou-container">
@@ -304,12 +341,8 @@
 <div class="blue-line"></div>
 <div class="thankyou-container reg-form">
   <div class="container flex-container">
-      <div>
-          <img src="assets/media/image/image-3.png"> 
-          <div class="img-shadow">
-
-          </div>
-       </div>   
+      <img src="assets/media/image/image-3.png"> 
+       <div class="img-shadow"></div> 
       <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sapien vitae massa molestie volutpat a in dui. Cras aliquet nulla suscipit, vehicula arcu vel, volutpat lacus. Nunc viverra vestibulum magna in placerat. Vestibulum posuere ligula purus, sit amet eleifend felis tristique a. Curabitur faucibus eros sem, quis blandit velit blandit ut. Maecenas dictum aliquam elit id luctus. Ut vitae aliquam lorem. Mauris at sem auctor nisi porttitor lobortis ac ut felis. Sed lorem erat, finibus quis mauris id, tincidunt imperdiet sapien. Nam vitae ultricies sem, at commodo lacus.</p>
           <a class="back-to-home" href="./">BACK TO HOME</a>
