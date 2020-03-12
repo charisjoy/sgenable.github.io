@@ -3270,6 +3270,13 @@ header {
       #information-content-3 .flex-container{
         flex-direction: column-reverse;
       }
+      #carouselExampleCaptions12 {
+          width: 100vw;
+          height: 49vh;
+      }
+      #carouselExampleCaptions12 .carousel-inner div:first-child{
+        height: 51vh;
+      }
 }
 
 @media (max-width: 56.25em) {
