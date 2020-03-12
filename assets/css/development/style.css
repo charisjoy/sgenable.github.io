@@ -3449,8 +3449,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-
-  #topnav-link, 
+ 
   .link-background {
     display: none;
   }
