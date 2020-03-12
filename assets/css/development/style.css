@@ -2893,10 +2893,10 @@ header {
 
 .information-shadow-process{
     position: absolute;
-    top: -308px;
+    top: -72px;
     left: 87px;
     width: 162%;
-    height: 114%;
+    height: 117%;
     background-color: #ebf5da;
     margin: 38px;
     border-radius: 20px;
