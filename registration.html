@@ -332,6 +332,76 @@
       font-size: 16px !important;
     }
 
+    .topnav-menu-btn {
+      position: relative;
+      display: none;
+      margin-top: 30px;
+      margin-right: 20px;
+      padding: 0;
+      width: 60px;
+      height: 60px;
+      border: none !important;
+      text-decoration: none;
+      cursor: pointer;
+      background: none;
+    }
+
+    .topnav-menu-btn span {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      display: block;
+      margin-top: 0;
+      width: 100%;
+      height: 10px;
+      border-radius: 4px;
+      background: #275eac;
+    }
+
+    .topnav-menu-btn span:nth-child(2) {
+      top: 22px;
+    }
+
+    .topnav-menu-btn span:nth-child(3) {
+      top: 39px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #topnav-link, 
+      .link-background {
+        display: none;
+      }
+
+      .topnav-menu-btn {
+        display: block;
+      }
+      
+      .main-header {
+        margin-top: 6rem;
+      }
+
+      .main-header h1 {
+        margin-bottom: 1rem;
+      }
+      
+      @media only screen and (max-width: 900px) {
+        .apply-content.col-sm-12,
+        .apply-content.col-md-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .submit-bt .login-here {
+          padding: 20px;
+        }
+      }
+    }
   </style>
   <link rel="stylesheet" href="assets/css/production/global.css">
 </head>
@@ -350,6 +420,11 @@
       <a class="tablinks" href="#about">TAKE SURVEY</a>
       <button id="btn-login" class="button button-login">LOGIN</button>
     </div>
+    <a class="topnav-menu-btn" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
   </div>
 
   <div id="green-circle-menu" class="green-circle-menu accessibility-sticky sticky">
@@ -369,7 +444,7 @@
 
   <div class="registration-container">
   <div class="main-header">
-    <div class="col-md-6"> 
+    <div class="apply-content scol-sm-12 col-md-6"> 
       <h1>Apply for the Enabling Mark</h1>
       <h2>Lorem ipsum dolor aman insep dolor.Lorem ipsum dolor sit amet, consectetur</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non urna id nulla imperdiet iaculis. Integer lobortis mauris sapien. Curabitur eu dui at diam venenatis faucibus quis et mi.
@@ -377,10 +452,10 @@
       </p>       
     </div>
     
-    <div class="col-md-6">      
+    <div class="col-sm-12 col-md-6">      
       <img src="assets/media/image/image-2.png">  
     </div>    
-    <div class="header-shadow"></div>  
+    <div class="col-sm-12 header-shadow"></div>
   </div>
 </div>
 <div class="green-line"></div>
@@ -401,16 +476,16 @@
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-2" for="salutation">Salutation</label>
-        <div class="col-sm-10 inline">
+        <label class="control-label col-sm-12 col-md-2" for="salutation">Salutation</label>
+        <div class="col-sm-6 col-md-2 inline">
           <select class="form-control salutation" required id="salutation" name="salutation">
             <option value="ms">Ms.</option>
             <option value="mr">Mr</option>
             <option value="mrs">Mrs</option>
           </select>
         </div>
-        <label class="control-label col-sm-2" for="firstname">First Name</label>
-        <input required type="text" class="form-control inline-right" id="firstname" name="firstname">
+        <label class="control-label col-sm-6 col-md-2" for="firstname">First Name</label>
+        <input required type="text" class="col-sm-12 col-md-6 form-control inline-right" id="firstname" name="firstname">
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="lastname">Last Name</label>
@@ -447,7 +522,6 @@
         <input type="submit" class="control-label button"value="REGISTER">
         <p class="login-here">Already registered? <a href="login.html">Log in here.</a></p>
       </div>
-
     </form>
   </div>
 </div>
@@ -458,11 +532,11 @@
  <!-- Footer & Disclaimer -->
  <footer id="footer" class="main-footer footer-sgenable-disclaimer">
   <div class="container footer-top">
-    <div class="col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
       <img src="assets/media/image/SG-Enable-logo-with-tagline-inverted.png">
     </div>
     <div>
-      <div class="form-group">
+      <div class="form-group col-sm-12">
         <p>Sign up for our mailing list</p>
         <div class="sign-up-from">
           <input type="text" placeholder="First Name">
@@ -473,7 +547,7 @@
         
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
       <p>Connect with us</p>
       <div class="social-icon">
         <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -483,7 +557,7 @@
 </div>
   <div id="footer-copyright" class="copyright footer-sgenable-copyright">
     <div class="footer-content container">
-      <div>&copy; 2020 SG Enable. All Rights Reserved.</div>
+      <div class="footer-copyright">&copy; 2020 SG Enable. All rights reserved.</div>
       <div class="footer-links">
         <a href="#" class="privacy-link">Privacy Policy</a>
         <a href="#" class="privacy-link">Terms of Use</a>
