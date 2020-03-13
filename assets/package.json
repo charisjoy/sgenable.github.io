@@ -1,0 +1,29 @@
+{
+  "name": "roche",
+  "version": "0.1.0",
+  "description": "Roche Frontend Codebase",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server ./../",
+    "dev": "npm run sass",
+    "sass": "sass sass/style.scss css/development/style.css --no-source-map --watch --poll",
+    "compile": "sass sass/style.scss css/development/style.css --no-source-map",
+    "prefix": "postcss --use autoprefixer -o css/production/style.prefix.min.css css/production/style.min.css",
+    "compress": "postcss --use cssnano -o css/production/style.min.css css/development/style.css",
+    "build": "npm-run-all --parallel compile compress"
+  },
+  "keywords": [
+    "Roche"
+  ],
+  "author": "Frontend Dev",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.24.4"
+  }
+}
